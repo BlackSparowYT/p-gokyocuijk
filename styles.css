@@ -1,0 +1,1641 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+p, a {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+
+a {
+    color: #ff0000;
+    transition: all 0.2s;
+}
+
+a:hover {
+    color: #b30000;
+    transition: all 0.2s;
+}
+
+
+
+body {
+    background-color: #272727;
+}
+
+
+
+
+/*** Scrollbar ***/
+
+::-webkit-scrollbar {
+    width: 7px;
+
+    
+}
+  
+::-webkit-scrollbar-track {
+    background: #212121; 
+    /*border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;*/
+}
+   
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    /*border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;*/
+    transition: all 0.3s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #777; 
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+
+/*** Navbar ***/
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #212121;
+}
+              
+.navbar li {
+    float: right;
+}
+              
+.navbar li a {
+    padding: 0px;
+}
+              
+.navbar li a, .navbar li h1 {
+    display: block;
+    color: white;
+    text-align: center;
+    margin: 10px 10px 10px 0;
+    padding: calc(40px - 23px / 2) 16px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all .2s ease-in;
+    background-color: #212121;
+}
+              
+.navbar li a:hover {
+    background-color: #ff0000;
+    color: #000;
+}
+              
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    height: 100px;
+    z-index: 1000;
+}
+              
+.navbar #sitename {
+    margin: 0px;
+    background-color: #212121;
+    color: #FFF;
+    height: 100px;
+    width: 250px;
+    border-bottom-right-radius: 10px;
+}
+
+.navbar img {
+    background-color: 212121;
+    height: 80px;
+    margin: 10px 0 10px 10px;
+}
+
+.navbar .first {
+    padding-left: 0;
+    padding-right: 0;
+    width: 120px;
+}
+
+.navbar .active {
+    background-color: #ff0000;
+    color: #000;
+}
+
+
+
+
+/*** Footer ***/
+
+footer {
+    background-color: #2f2f2f;
+    color: #fff;
+    height: 200px;
+    margin-top: 40px;
+}
+
+footer .block-1 {
+    float: left;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 15%;
+    height: 170px;
+}
+
+footer .block-2 {
+    padding-top: 10px;
+    width: 84%;
+    height: 160px;
+    margin-left: 16%;
+}
+
+footer .block-3 {
+    text-align: center;
+    height: 30px;
+}
+
+footer img {
+    height: 150px;
+    width: 150px;
+}
+
+footer .block-2-1 {
+    float: left;
+    width: 50%;
+    margin-left: 25%;
+    height: 100%;
+}
+
+footer .block-2-2 {
+    margin-left: 75%;
+    width: 25%;
+    height: 100%;
+}
+
+footer .block-2-2 h3 {
+    text-align: left;
+}
+
+
+footer .block-2-2-1, footer .block-2-2-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Home Page */
+
+
+/** Hero **/
+
+.home-hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://cdn.blacksparow.gq/gokyo-cuijk/images/hero-image-upscale.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home-hero .overlay {
+    width: 100%;
+    height: 60vh;
+    margin-top: 40vh;
+    float: left;
+    background-image: linear-gradient(#00000000, #272727);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.home-hero .hero-text {
+    margin-top: -40vh;
+    font-size: 35px !important;
+    font-family: 'Hanalei Fill', cursive !important;
+    font-weight: bold !important;
+}
+
+
+/** Over Gokyo **/
+
+.home .over-gokyo {
+    padding: 20px 0 0 20px;
+    color: #FFF;
+    width: 60%;
+}
+
+.home .over-gokyo p {
+    padding: 10px 0 0 0;
+}
+
+
+
+
+/* Sep4 */
+.info1 {
+    --width: 100%;
+    --height: 100px;
+    --top-color: #272727;
+    --bottom-color: #27272700;
+}
+
+.info1 {
+    background-color: #bfbfbf;
+    width: 75%;
+    margin-left: 25%;
+}
+
+.item-text-1 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 50%;
+    text-align: center;
+    margin-left: 25%;
+}
+
+
+.separator1t {
+    position: relative;
+    width: var(--width);
+    height: var(--height);
+    margin-left: -2px;
+}
+
+.separator1t::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: var(--top-color);
+    clip-path: polygon(100% 0, 0 0, 0 100%);
+}
+
+.separator1t::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: var(--bottom-color);
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+}
+
+.separator1b {
+    transform: rotateY(180deg);
+}
+
+.separator1b {
+    position: relative;
+    width: var(--width);
+    height: var(--height);
+    margin-bottom: -1px;
+    margin-left: -2px;
+}
+
+.separator1b::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #27272700;
+    clip-path: polygon(100% 0, 0 0, 0 100%);
+}
+  
+.separator1b::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #272727;
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+}
+/**/
+
+/* Sep5 */
+.info2 {
+    --width: 100%;
+    --height: 100px;
+    --top-color: #272727;
+    --bottom-color: #27272700;
+}
+
+.info2 {
+    background-color: #bfbfbf;
+    width: 75%;
+}
+
+.item-text-2 {
+    
+    width: 70%;
+    text-align: left;
+    margin-left: 30px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+
+.separator2t {
+    position: relative;
+    width: var(--width);
+    height: var(--height);
+}
+
+.separator2t::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: var(--top-color);
+    clip-path: polygon(100% 0, 0 0, 0 100%);
+}
+
+.separator2t::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: var(--bottom-color);
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+}
+
+.separator2t {
+    transform: rotateY(180deg);
+    margin-bottom: -3px;
+    padding-right: 5px;
+}
+
+
+
+.separator2t2 {
+    position: relative;
+    width: var(--width);
+    height: var(--height);
+}
+
+.separator2t2::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #27272700;
+    clip-path: polygon(100% 0, 0 0, 0 100%);
+}
+
+.separator2t2::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #272727;
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+}
+
+.separator2t2 {
+    transform: rotateY(180deg);
+    margin-bottom: -1px;  
+}
+
+/**/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*** Informatie Page ***/
+
+
+.informatie {
+    width: 100%;
+}
+
+/** Hero / Flexboxen **/
+
+
+.info-hero {
+    width: 100%;
+    height: calc(100vh - 77.6px);
+    margin-top: 77.6px;
+}
+
+
+/* Flex Box 1 */
+
+.informatie .flex-box-1 {
+    padding-top: 30px;
+}
+
+.informatie .flex-box-1 {
+    height: 35vh;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.informatie .flex-box-1 div {
+    width: 30%;
+    min-width: 300px;
+    height: 100%;
+    max-height: 200px;
+    border-radius: 10px;
+}
+
+.informatie .flex-box-1 .overlay {
+    background-color: #2727276b;
+    width: 100%;
+    transition: all 1s ease-in-out;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.informatie .flex-box-1 .overlay:hover {
+    box-shadow: -60px 0px 25px 0px #272727c8 inset;
+    transition: all 1s ease-in-out;
+}
+
+.informatie .flex-box-1 .block1 {
+    background-image: url(https://cdn.blacksparow.gq/gokyo-cuijk/images/nieuws.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.informatie .flex-box-1 .block2 {
+    background-image: url(https://cdn.blacksparow.gq/gokyo-cuijk/images/lestijden.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.informatie .flex-box-1 .block3 {
+    background-image: url(https://cdn.blacksparow.gq/gokyo-cuijk/images/Agenda.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.informatie .flex-box-1 h3 {
+    text-align: right;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    color: #FFFFFF;
+}
+
+.informatie .flex-box-1 .overlay:hover h3 {
+    animation: hoveron-h3 1s;
+    margin-bottom: 25%;
+}
+
+.informatie .flex-box-1 .overlay h3 {
+    animation: hoveroff-h3 1s;
+    margin-bottom: 5px;
+}
+
+
+/* Flex Box 2 */
+
+.informatie .flex-box-3 {
+    height: 35vh;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.informatie .flex-box-2 div {
+    width: 25%;
+    min-width: 300px;
+    height: 100%;
+    max-height: 200px;
+    border-radius: 10px;
+}
+
+.informatie .flex-box-2 .overlay {
+    background-color: #2727276b;
+    width: 100%;
+    transition: all 1s ease-in-out;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.informatie .flex-box-2 .overlay:hover {
+    box-shadow: -60px 0px 25px 0px #272727c8 inset;
+    transition: all 1s ease-in-out;
+}
+
+
+.informatie .flex-box-2 .block1 {
+    background-image: url(https://cdn.blacksparow.gq/gokyo-cuijk/images/#);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.informatie .flex-box-2 .block2 {
+    background-image: url(https://cdn.blacksparow.gq/gokyo-cuijk/images/#);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.informatie .flex-box-2 .block3 {
+    background-image: url(https://cdn.blacksparow.gq/gokyo-cuijk/images/#);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+
+.informatie .flex-box-2 h3 {
+    text-align: right;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    color: #FFFFFF;
+}
+
+.informatie .flex-box-2 .overlay:hover h3 {
+    animation: hoveron-h3 1s;
+    margin-bottom: 25%;
+}
+
+.informatie .flex-box-2 .overlay h3 {
+    animation: hoveroff-h3 1s;
+    margin-bottom: 5px;
+}
+
+
+/* Flex Box 3 */
+
+.informatie .flex-box-3 {
+    height: 35vh;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.informatie .flex-box-3 div {
+    width: 25%;
+    min-width: 300px;
+    height: 100%;
+    max-height: 200px;
+    border-radius: 10px;
+}
+
+.informatie .flex-box-3 .overlay {
+    background-color: #2727276b;
+    width: 100%;
+    transition: all 1s ease-in-out;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.informatie .flex-box-3 .overlay:hover {
+    box-shadow: -60px 0px 25px 0px #272727c8 inset;
+    transition: all 1s ease-in-out;
+}
+
+.informatie .flex-box-3 .block1 {
+    background-image: url(https://cdn.blacksparow.gq/gokyo-cuijk/images/huisregels.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.informatie .flex-box-3 .block2 {
+    background-image: url(https://cdn.blacksparow.gq/gokyo-cuijk/images/exameneisen.jpg);    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.informatie .flex-box-3 .block3 {
+    background-image: url(https://cdn.blacksparow.gq/gokyo-cuijk/images/inschrijven.jpg);    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.informatie .flex-box-3 h3 {
+    text-align: right;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    color: #FFFFFF;
+}
+
+.informatie .flex-box-3 .overlay:hover h3 {
+    animation: hoveron-h3 1s;
+    margin-bottom: 25%;
+}
+
+.informatie .flex-box-3 .overlay h3 {
+    animation: hoveroff-h3 1s;
+    margin-bottom: 5px;
+}
+
+
+@media only screen and (max-width: 960px) {
+    .informatie .flex-box-1 {
+        margin-top: 250px;
+    }
+    
+    .informatie .flex-box-1,
+    .informatie .flex-box-2,
+    .informatie .flex-box-3 {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+
+    @media only screen and (max-width: 960px) {
+        .informatie .flex-box-1 a,
+        .informatie .flex-box-2 a,
+        .informatie .flex-box-3 a {
+        margin: 20px;
+        }
+    }
+
+    .informatie .flex-box-1 .block1,
+    .informatie .flex-box-1 .block2,
+    .informatie .flex-box-1 .block3,
+    .informatie .flex-box-3 .block1,
+    .informatie .flex-box-3 .block2,
+    .informatie .flex-box-3 .block3 {
+        margin: 0;
+    }
+
+    .informatie .flex-box-1 a,
+    .informatie .flex-box-2 a,
+    .informatie .flex-box-3 a {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 1250px) {
+    
+
+    .informatie .flex-box-1 .block1,
+    .informatie .flex-box-1 .block2,
+    .informatie .flex-box-1 .block3,
+    .informatie .flex-box-3 .block1,
+    .informatie .flex-box-3 .block2,
+    .informatie .flex-box-3 .block3 {
+        min-width: 400px;
+        min-height: 250px;
+    }
+
+    .informatie .flex-box-1 a,
+    .informatie .flex-box-2 a,
+    .informatie .flex-box-3 a {
+        min-width: 400px;
+        min-height: 250px;
+    }
+
+    .informatie .overlay {
+        min-width: 400px;
+        min-height: 250px;
+    }
+}
+
+
+
+
+
+
+@keyframes hoveron-h3 {
+    from {margin-bottom: 5px;}
+    to {margin-bottom: 25%;}
+}
+
+@keyframes hoveroff-h3 {
+    from {margin-bottom: 25%;}
+    to {margin-bottom: 5px;}
+}
+
+
+
+
+
+
+
+
+/*** Nieuws Page ***/
+
+.nieuws-hero {
+    width: 100%;
+    height: 50vh;
+    background-image: url(https://cdn.blacksparow.gq/gokyo-cuijk/images/nieuws.jpg);
+    background-color: #ff0000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFF;
+}
+
+.nieuws-hero .overlay {
+    width: 100%;
+    height: 30vh;
+    margin-top: 20vh;
+    float: left;
+    background-image: linear-gradient(#00000000, #272727);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.nieuws-hero .hero-text {
+    margin-top: -20vh;
+    font-size: 35px !important;
+    font-family: 'Hanalei Fill', cursive !important;
+    font-weight: bold !important;
+}
+
+.nieuws h3 {
+    margin-top: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+.iframeclone {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.fb-page {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+/*** Agenda Page ***/
+
+.agenda {
+    height: 160vh;
+}
+
+.agenda-hero {
+    width: 100%;
+    height: 50vh;
+    background-image: url(https://cdn.blacksparow.gq/gokyo-cuijk/images/Agenda.jpg);
+    background-color: #ff0000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.agenda-hero .overlay {
+    width: 100%;
+    height: 30vh;
+    margin-top: calc(20vh + 2px);
+    float: left;
+    background-image: linear-gradient(#00000000, #272727);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.agenda-hero .hero-text {
+    margin-top: -20vh;
+    margin-left: -45%;
+    font-size: 35px !important;
+    font-family: 'Hanalei Fill', cursive !important;
+    font-weight: bold !important;
+}
+
+.agenda-hero h3 {
+    margin-top: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .agenda .flex-box-1 div, .agenda .flex-box-2 div,
+    .agenda .flex-box-3 div {
+        margin-top: 20px;
+    }
+}
+
+.agenda .flex-box-1 {
+    width: 100%;
+    height: 30vh;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.agenda .flex-box-1 div {
+    width: 22%;
+    min-width: 150px;
+    background-color: #353535;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.agenda .flex-box-1 h3,.agenda .flex-box-1 p {
+    margin-top: 10px;
+}
+
+
+
+
+
+
+.agenda .flex-box-2 {
+    width: 100%;
+    height: 30vh;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.agenda .flex-box-2 div {
+    width: 22%;
+    min-width: 150px;
+    background-color: #353535;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.agenda .flex-box-2 h3,.agenda .flex-box-2 p {
+    margin-top: 10px;
+}
+
+
+
+
+
+
+.agenda .flex-box-3 {
+    width: 100%;
+    height: 30vh;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.agenda .flex-box-3 div {
+    width: 22%;
+    min-width: 150px;
+    background-color: #353535;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.agenda .flex-box-3 h3,.agenda .flex-box-3 p {
+    margin-top: 10px;
+}
+
+.agenda .jaartalblock {
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*** Lestijden Page ***/
+
+.lestijden-hero {
+    width: 100%;
+    height: 50vh;
+    background-image: url(https://cdn.blacksparow.gq/gokyo-cuijk/images/lestijden.jpg);
+    background-color: #ff0000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFF;
+}
+
+.lestijden-hero .overlay {
+    width: 100%;
+    height: 30vh;
+    margin-top: 20vh;
+    float: left;
+    background-image: linear-gradient(#00000000, #272727);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.lestijden-hero .hero-text {
+    margin-top: -20vh;
+    font-size: 35px !important;
+    font-family: 'Hanalei Fill', cursive !important;
+    font-weight: bold !important;
+}
+
+.lestijden h3 {
+    margin-top: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+.lestijden .main-block {
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+}
+
+.block-left, .block-right {
+    display: normal;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.block-right .right-text {
+    text-align: left;
+}
+
+.lestijden table {
+    width: 600px;
+    height: 80%;
+    text-align: center;
+}
+
+.lestijden tr {
+    width: 600px;
+    height: 45px;
+}
+
+.lestijden th {
+    width: 200px;
+    background-color: #353535;
+    /*border: #505050 solid 2px;*/
+}
+
+.lestijden td {
+    width: 200px;
+    background-color: #505050;
+    /*border: #353535 solid 2px;*/
+}
+
+
+.left-top {
+    border-top-left-radius: 10px;
+}
+
+.right-top {
+    border-top-right-radius: 10px;
+}
+
+.left-bottom {
+    border-bottom-left-radius: 10px;
+}
+
+.right-bottom {
+    border-bottom-right-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*** Huisregels Page ***/
+
+.regels-hero {
+    width: 100%;
+    height: 50vh;
+    background-image: url(https://cdn.blacksparow.gq/gokyo-cuijk/images/huisregels.jpg);
+    background-color: #ff0000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #000;
+}
+
+.regels-hero .overlay {
+    width: 100%;
+    height: 30vh;
+    margin-top: 20vh;
+    float: left;
+    background-image: linear-gradient(#00000000, #272727);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.regels-hero .hero-text {
+    margin-top: -20vh;
+    font-size: 35px !important;
+    font-family: 'Hanalei Fill', cursive !important;
+    font-weight: bold !important;
+}
+
+.regels h3 {
+    margin-top: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+
+.regels-text {
+    margin: 40px 0 0 30px;
+    color: #fff;
+    width: 55%;
+}
+
+@media only screen and (max-width: 800px) {
+    .regels-text {
+        width: 80%;
+    }
+}
+
+
+
+
+/*** Inschrijven Page ***/
+
+.inschrijven-hero {
+    width: 100%;
+    height: 50vh;
+    background-image: url(https://cdn.blacksparow.gq/gokyo-cuijk/images/inschrijven.jpg);
+    background-color: #ff0000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #000;
+}
+
+.inschrijven-hero .overlay {
+    width: 100%;
+    height: 30vh;
+    margin-top: 21vh;
+    float: left;
+    background-image: linear-gradient(#00000000, #272727);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.inschrijven-hero .hero-text {
+    margin-top: -20vh;
+    font-size: 35px !important;
+    font-family: 'Hanalei Fill', cursive !important;
+    font-weight: bold !important;
+}
+
+.inschrijven h3 {
+    margin-top: 50px;
+    text-align: left;
+    color: #fff;
+}
+
+.inschrijven p {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: left;
+    color: #fff;
+}
+
+.inschrijven a {
+    background-color: #ff0000;
+    padding: 20px 30px;
+    text-align: left;
+    color: #fff;
+    border-radius: 10px;
+    color: #000;
+}
+
+.inschrijven-text {
+    margin: 40px 0 0 30px;
+    color: #fff;
+    width: 55%;
+}
+
+@media only screen and (max-width: 800px) {
+    .inschrijven-text {
+        width: 80%;
+    }
+}
+
+
+
+
+
+
+
+/*** Examen Eisen Page ***/
+
+.examen-hero {
+    width: 100%;
+    height: 50vh;
+    background-image: url(https://cdn.blacksparow.gq/gokyo-cuijk/images/exameneisen.jpg);
+    background-color: #ff0000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.examen-hero .overlay {
+    width: 100%;
+    height: 30vh;
+    margin-top: 20vh;
+    float: left;
+    background-image: linear-gradient(#00000000, #272727);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.examen-hero .hero-text {
+    margin-top: -20vh;
+    font-size: 35px !important;
+    font-family: 'Hanalei Fill', cursive !important;
+    font-weight: bold !important;
+}
+
+.examen h3 {
+    margin-top: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+.examen .flex-box-1,
+.examen .flex-box-2,
+.examen .flex-box-3 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.examen img {
+    border-radius: 10px;
+    width: 33%;
+}
+
+.examen .download {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.examen .download h3 {
+    margin:0 0 20px 0;
+}
+
+
+.examen .download a {
+    padding: 10px;
+    margin: 2px;
+    background-color: #ff0000;
+    border-radius: 10px;
+    color: #000;
+    transition: all 0.3s;
+}
+
+.examen .download a:hover {
+    margin: 4px;
+    padding: 8px;
+    transition: all 0.3s;
+}
+
+@media only screen and (max-width: 1200px) {
+    .examen img {
+        margin-top: 30px;
+        width: 80%;
+    }
+    .examen .flex-box-1,
+    .examen .flex-box-2,
+    .examen .flex-box-3 {
+        margin-top: 0px;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*** Contact Page ***/
+
+.contact-hero {
+    width: 100%;
+    height: 50vh;
+    background-image: url(https://cdn.blacksparow.gq/gokyo-cuijk/images/contact.jpg);
+    background-color: #ff0000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #000;
+}
+
+.contact-hero .overlay {
+    width: 100%;
+    height: 30vh;
+    margin-top: 20vh;
+    float: left;
+    background-image: linear-gradient(#00000000, #272727);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-hero .hero-text {
+    margin-top: -20vh;
+    font-size: 35px !important;
+    font-family: 'Hanalei Fill', cursive !important;
+    font-weight: bold !important;
+}
+
+.contact h2 {
+    margin-top: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+.contact h3 {
+    color: #fff;
+    text-align: center;
+}
+
+.contact .block-1 h4 {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.contact .block-1 ul {
+    margin-top: 10px;
+    margin-left: 50px;
+    list-style: none;
+}
+
+.contact .flex-box-1 {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.contact .block-1, .contact .block-2 {
+    width: 45%;
+    margin-top: 40px;
+}
+
+.contact .block-1 {
+    min-width: 660px;
+    background: #353535;
+    padding: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.contact .block-2 {
+    min-width: 660px;
+    background: #353535;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.contact .block-2 h4 {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.contact .block-2 p {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.contact .block-2 img {
+    width: 200px;
+    height: 200px;
+}
+
+.contact .social-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 500px;
+    width: 600px;
+    margin-top: 10px;
+    margin-left: 30px;
+    border-radius: 10px;
+}
+
+.gmap_canvas iframe {
+    height: 500px;
+    width: 600px;
+}
+
+
+@media only screen and (max-width: 1380px) {
+
+    .contact .flex-box-1 {
+        flex-wrap: wrap;
+    }
+
+    .contact .block-2 {
+        float: right;
+        margin-left: auto;
+    }
+}
+
+
+
+@media only screen and (max-width: 680px) {
+    .contact .block-1, .contact .block-2 {
+        min-width: 80%;
+    }
+
+    .gmap_canvas {
+        height: 250px;
+        width: 300px;
+        margin-top: 10px;
+        margin-left: 20px;
+        border-radius: 10px;
+    }
+
+    .gmap_canvas iframe {
+        height: 250px;
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .gmap_canvas {
+        height: 250px;
+        width: 200px;
+        margin-top: 10px;
+        margin-left: 10px;
+        border-radius: 10px;
+    }
+
+    .gmap_canvas iframe {
+        height: 250px;
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .contact .flex-box-1 {
+        flex-wrap: wrap;
+    }
+
+    .contact .block-2 {
+        margin-left: 0;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+
+    .contact .block-2 img {
+        width: 150px !important;
+        height: 150px !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Over Ons Page */
+
+
+/** Hero **/
+
+.over-ons-hero {
+    width: 100%;
+    height: 60vh;
+    background-image: url(https://cdn.blacksparow.gq/gokyo-cuijk/images/hero-image-upscale.png);/*https://cdn.blacksparow.gq/gokyo-cuijk/images/hero-image-upscale.png;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.over-ons-hero .overlay {
+    width: 100%;
+    height: 30vh;
+    margin-top: 30vh;
+    float: left;
+    background-image: linear-gradient(#00000000, #272727);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.over-ons-hero .hero-text {
+    margin-top: -30vh;
+    font-size: 35px !important;
+    font-family: 'Hanalei Fill', cursive !important;
+    font-weight: bold !important;
+}
+
+
+/** Over Gokyo **/
+
+.over-ons .over-gokyo {
+    padding: 20px 0 0 20px;
+    color: #FFF;
+    width: 60%;
+}
+
+.over-ons .over-gokyo p {
+    padding: 10px 0 0 0;
+}
+
+
+
+
+
+
+
+/* Sponsors Page */
+
+
+/** Hero **/
+
+.sponsors-hero {
+    width: 100%;
+    height: 60vh;
+    background-image: url(https://cdn.blacksparow.gq/gokyo-cuijk/images/hero-image-upscale.png);/*https://cdn.blacksparow.gq/gokyo-cuijk/images/hero-image-upscale.png;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sponsors-hero .overlay {
+    width: 100%;
+    height: 30vh;
+    margin-top: 30vh;
+    float: left;
+    background-image: linear-gradient(#00000000, #272727);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.sponsors-hero .hero-text {
+    margin-top: -30vh;
+    font-size: 35px !important;
+    font-family: 'Hanalei Fill', cursive !important;
+    font-weight: bold !important;
+}
+
+
+/** Over Gokyo **/
+
+.sponsors .sponsors1 {
+    margin-top: 30px;
+    padding: 20px 0 0 20px;
+    color: #FFF;
+    width: 60%;
+}
+
+.sponsors .sponsors1 p {
+    padding: 10px 0 0 0;
+}
+
+.sponsors .sponsors2 {
+    margin-top: 30px;
+    padding: 20px 0 0 20px;
+    color: #FFF;
+    width: 60%;
+}
+
+.sponsors .sponsors2 p {
+    padding: 10px 0 0 0;
+}
+
+.sponsors .sponsors3 {
+    margin-top: 30px;
+    padding: 20px 0 0 20px;
+    color: #FFF;
+    width: 60%;
+}
+
+.sponsors .sponsors3 p {
+    padding: 10px 0 0 0;
+}
