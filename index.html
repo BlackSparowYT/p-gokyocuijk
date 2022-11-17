@@ -13,23 +13,169 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
     </head>
 
     <body id="home">
         <header>
-            <nav class="navbar">
-                <ul>
-                    <li style="float: left;" id="sitename"><img src="https://cdn.blacksparow.gq/gokyo-cuijk/images/Gokyo%20Cuijk.png"></li>
-                    <li><a href="./sponsors/index.html"><h3 style="margin: 0px; padding: 0px;">Sponsors</h3></a></li>
-                    <li><a href="./over-ons/index.html"><h3 style="margin: 0px; padding: 0px;">Over Ons</h3></a></li>
-                    <li><a href="./contact/index.html"><h3 style="margin: 0px; padding: 0px;">Contact</h3></a></li>
-                    <li><a href="./informatie/inschrijven/index.html"><h3 style="margin: 0px; padding: 0px;">Inschrijven</h3></a></li>
-                    <li><a href="./informatie/index.html"><h3 style="margin: 0px; padding: 0px;">Informatie</h3></a></li>
-                    <li><a href="" class="first active"><h3 style="margin: 0px; padding: 0px;">Home</h3></a></li>
-                </ul>
+            <nav>
+                <div id="navbar-v1">
+                    <div class="navbar-v1-sitelogo">
+                        <a><img src="https://cdn.blacksparow.gq/gokyo-cuijk/images/Gokyo%20Cuijk.png"></a>
+                    </div>
+                    <div class="navbar-v1-items">
+                        <a href="index.html" class="active"><h3>Home</h3></a>
+                        <a href="./informatie/index.html"><h3>Informatie</h3></a>
+                        <a href="./informatie/inschrijven/index.html"><h3>Inschrijven</h3></a>
+                        <a href="./contact/index.html"><h3>Contact</h3></a>
+                        <a href="./over-ons/index.html"><h3>Over Ons</h3></a>
+                        <a href="./sponsors/index.html"><h3>Sponsors</h3></a>
+                        
+                        
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
+                </div>
+
+
+                
+                <div id="navbar-v2">
+                    <div class="navbar-v2-sitelogo">
+                        <a><img src="https://cdn.blacksparow.gq/gokyo-cuijk/images/Gokyo%20Cuijk.png"></a>
+                    </div>
+                    <div class="navbar-v2-items">
+                        <a onclick="openNav()"><h2>&#9776;</h2></a>
+                    </div>
+                    <div id="navbar-v2-fullscreen" class="nav-overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="nav-overlay-content">
+                            <a href="index.html" class="active"><h3>Home</h3></a>
+                            <a href="./informatie/index.html"><h3>Informatie</h3></a>
+                            <a href="./informatie/inschrijven/index.html"><h3>Inschrijven</h3></a>
+                            <a href="./contact/index.html"><h3>Contact</h3></a>
+                            <a href="./over-ons/index.html"><h3>Over Ons</h3></a>
+                            <a href="./sponsors/index.html"><h3>Sponsors</h3></a>
+                        </div>
+                      </div>
+                </div>
+
+
+                <script>
+                    function openNav() {
+                      document.getElementById("navbar-v2-fullscreen").style.height = "100%";
+                    }
+                    
+                    function closeNav() {
+                      document.getElementById("navbar-v2-fullscreen").style.height = "0%";
+                    }
+                    </script>
             </nav>
         </header>
         <main class="home">
+
+
+                <!-------------------------------------------------->
+
+                <!-- Popup VANAF BLIJVEN! -->
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2>Voordat je verder gaat graag even dit bericht lezen.</h2>
+                        <br>
+                        <h3>
+                            Heb je dit bericht al een keer gelezen? Dan mag je het weg klikken. Zo niet, lees het dan veder.
+                        </h3>
+                        <br>
+                        <br>
+                        <p>
+                            <strong>Graag willen wij even aandacht duiden naar de volgende 2 dingen:</strong>
+                            <br>
+                            > De site is nog niet geschikt voor telefoon aangezien de layout nog niet helemaal klopt dus raden wij aan om de site voor nu op een computer te bekijken. Dit probleem zal binnenkort opgelost zijn.
+                            <br>
+                            <br>
+                            > Natuurlijk is het niet de bedoeling dat je problemen ondervindt tijdens het bezoeken van de site, vind je er toch wel een? doe dan het volgende. 
+                                <br>1. Maak een foto (of video) van het probleem.
+                                <br>2. Stuur de foto (of video) samen met waar je het op de site hebt gevonden in een email naar: <a href="mailto:blacksparowyt@gmail.com">blacksparowyt@gmail.com</a>.
+                        </p>
+                    </div>
+                </div>
+
+                <script>
+        
+                    //GRAAG VANAF BLIJVEN!!!
+            
+            
+                // checks if one day has passed. 
+                function hasOneDayPassed() {
+            
+                // get today's date. eg: "7/37/2007"
+                var date = new Date().toLocaleDateString();
+            
+                // if there's a date in localstorage and it's equal to the above: 
+                // inferring a day has yet to pass since both dates are equal.
+                if( localStorage.yourapp_date == date ) 
+                    return false;
+            
+                // this portion of logic occurs when a day has passed
+                localStorage.yourapp_date = date;
+                return true;
+                }
+            
+            
+                // some function which should run once a day
+                function runOncePerDay(){
+                    if( !hasOneDayPassed() ) return false;
+            
+            
+            
+            
+            
+            
+            
+                    // Get the modal
+                    var modal = document.getElementById("myModal");
+                    
+                    // Get the button that opens the modal
+                    var btn = document.getElementById("myBtn");
+                    
+                    // Get the <span> element that closes the modal
+                    var span = document.getElementsByClassName("close")[0];
+                    
+                    //automaticly open the popup
+                    window.addEventListener("load", function(){
+                    setTimeout(
+                        function open(event){
+                            modal.style.display = "block";
+                        },
+                        1000
+                    )
+                    }); 
+            
+                    // When the user clicks on <span> (x), close the modal
+                    span.onclick = function() {
+                    modal.style.display = "none";
+                    }
+                    
+                    // When the user clicks anywhere outside of the modal, close it
+                    window.onclick = function(event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+                    }
+            
+                }
+            
+            
+                runOncePerDay();
+                runOncePerDay();
+                </script>
+    
+                <!-------------------------------------------------->
+    
+                
+
+
             <div class="home-hero">
                 <div class="overlay">
                     <div class="hero-text">
@@ -96,41 +242,69 @@
                 </div>
                 <div class="separator1b"></div>
             </div>
+
+
+
+            
+
+
         </main>
         <footer>
-            <div class="block-1">
-                <img src="./images/Blank-Logo.png">
-                <h3>Page Version: v0.9</h3>
-            </div>
-            <div class="block-2">
-                <div class="block-2-1">
-                    <h3>Over deze site:</h3>
-                    <p style="width: 75%;">
-                        Deze site is gemaakt voor de vereniging Gokyo Cuijk, dit is een judo vereniging die al een even rond hangt. Deze site is er om de vereniging een nieuwe moderne look te geven en om te zorgen dat Gokyo ook met de tijd mee gaat.
-                    </p>
+            <div class="flex-box-1">
+                <div class="block-1">
+                    <img src="./images/Blank-Logo.png">
+                    <h3>Page Version: v0.4</h3>
                 </div>
-                <div class="block-2-2">
-                    <h3>All Pages:</h3>
-                    <div class="block-2-2-1">
-                        <p>- <a href="index.html">Home</a></p>
-                        <p>- <a href="./informatie/index.html">Informatie</a></p>
-                        <p>-- <a href="https://www.facebook.com/gokyocuijk/" target="_blank">Nieuws</a></p>
-                        <p>-- <a href="./informatie/lestijden/index.html">Les Tijden</a></p>
-                        <p>-- <a href="./informatie/agenda/index.html">Agenda</a></p>
-                        <p>-- <a href="./informatie/huisregels/index.html">Huisregels</a></p>
+                <div class="block-2">
+                    <div class="block-2-1">
+                        <h3>Over deze site:</h3>
+                        <p>
+                            Deze site is gemaakt voor de vereniging Gokyo Cuijk, dit is een judo vereniging die al een even rond hangt. Deze site is er om de vereniging een nieuwe moderne look te geven en om te zorgen dat Gokyo ook met de tijd mee gaat.
+                        </p>
                     </div>
-                    <div class="block-2-2-2">
-                        <p>-- <a href="./informatie/exameneisen/index.html">Examen Eisen</a></p>
-                        <p>-- <a href="./informatie/inschrijven/index.html">Inschrijven</a></p>
-                        <p>- <a href="./contact/index.html">Contact</a></p>
-                        <p>- <a href="./over-ons/index.html">Over ons</a></p>
-                        <p>- <a href="./sponsors/index.html">Sponsors</a></p>
+                    <div class="block-2-2-v1">
+                        <h3>All Pages:</h3>
+                        <div class="block-2-2-1">
+                            <p>- <a href="./index.html">Home</a></p>
+                            <p>- <a href="./informatie/index.html">Informatie</a></p>
+                            <p>-- <a href="https://www.facebook.com/gokyocuijk/" target="_blank">Nieuws</a></p>
+                            <p>-- <a href="./informatie/lestijden/index.html">Les Tijden</a></p>
+                            <p>-- <a href="./informatie/agenda/index.html">Agenda</a></p>
+                            <p>-- <a href="./informatie/huisregels/index.html">Huisregels</a></p>
+                        </div>
+                        <div class="block-2-2-2">
+                            <p>-- <a href="./informatie/exameneisen/index.html">Examen Eisen</a></p>
+                            <p>-- <a href="./informatie/inschrijven/index.html">Inschrijven</a></p>
+                            <p>- <a href="./contact/index.html">Contact</a></p>
+                            <p>- <a href="./over-ons/index.html">Over ons</a></p>
+                            <p>- <a href="./sponsors/index.html">Sponsors</a></p>
+                        </div>
+                    </div>
+                    <div class="block-2-2-v2">
+                        <h3>All Pages:</h3>
+                        <div class="block-2-2-1">
+                            <a href="./index.html">Home</a>
+                            <a href="./informatie/index.html">Informatie</a>
+                            <a href="https://www.facebook.com/gokyocuijk/" target="_blank">Nieuws</a>
+                            <a href="./informatie/lestijden/index.html">Les Tijden</a>
+                            <a href="./informatie/agenda/index.html">Agenda</a>
+                            <a href="./informatie/huisregels/index.html">Huisregels</a>
+                        </div>
+                        <div class="block-2-2-2">
+                            <a href="./informatie/exameneisen/index.html">Examen Eisen</a>
+                            <a href="./informatie/inschrijven/index.html">Inschrijven</a>
+                            <a href="./contact/index.html">Contact</a>
+                            <a href="./over-ons/index.html">Over ons</a>
+                            <a href="./sponsors/index.html">Sponsors</a>
+                        </div>
                     </div>
                 </div>
             </div>
+            
             <div class="block-3">
                 <h3>Copyright - Gokyo Cuijk | <a href="https://blacksparow.gq" target="_blank">Finn Josten</a></h3>
             </div>
         </footer>
     </body>
 </html>
+

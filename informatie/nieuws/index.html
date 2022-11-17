@@ -17,15 +17,58 @@
 
     <body id="nieuws">
         <header>
-            <nav class="navbar">
-                <ul>
-                    <li style="float: left;" id="sitename"><img src="https://cdn.blacksparow.gq/gokyo-cuijk/images/Gokyo%20Cuijk.png"></li>
-                    <li><a href="../sponsors/index.html"><h3 style="margin: 0px; padding: 0px;">Sponsors</h3></a></li>
-                    <li><a href="../over-ons/index.html"><h3 style="margin: 0px; padding: 0px;">Over Ons</h3></a></li>
-                    <li><a href="../contact/index.html"><h3 style="margin: 0px; padding: 0px;">Contact</h3></a></li>
-                    <li><a href="" class="active"><h3 style="margin: 0px; padding: 0px;">Informatie</h3></a></li>
-                    <li><a href="../index.html" class="first"><h3 style="margin: 0px; padding: 0px;">Home</h3></a></li>
-                </ul>
+            <nav>
+                <div id="navbar-v1">
+                    <div class="navbar-v1-sitelogo">
+                        <a><img src="https://cdn.blacksparow.gq/gokyo-cuijk/images/Gokyo%20Cuijk.png"></a>
+                    </div>
+                    <div class="navbar-v1-items">
+                        <a href="../../index.html"><h3>Home</h3></a>
+                        <a href="../../informatie/index.html" class="active"><h3>Informatie</h3></a>
+                        <a href="../../informatie/inschrijven/index.html"><h3>Inschrijven</h3></a>
+                        <a href="../../contact/index.html"><h3>Contact</h3></a>
+                        <a href="../../over-ons/index.html"><h3>Over Ons</h3></a>
+                        <a href="../../sponsors/index.html"><h3>Sponsors</h3></a>
+                        
+                        
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
+                </div>
+
+
+                
+                <div id="navbar-v2">
+                    <div class="navbar-v2-sitelogo">
+                        <a><img src="https://cdn.blacksparow.gq/gokyo-cuijk/images/Gokyo%20Cuijk.png"></a>
+                    </div>
+                    <div class="navbar-v2-items">
+                        <a onclick="openNav()"><h2>&#9776;</h2></a>
+                    </div>
+                    <div id="navbar-v2-fullscreen" class="nav-overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="nav-overlay-content">
+                            <a href="../../index.html"><h3>Home</h3></a>
+                            <a href="../../informatie/index.html" class="active"><h3>Informatie</h3></a>
+                            <a href="../../informatie/inschrijven/index.html"><h3>Inschrijven</h3></a>
+                            <a href="../../contact/index.html"><h3>Contact</h3></a>
+                            <a href="../../over-ons/index.html"><h3>Over Ons</h3></a>
+                            <a href="../../sponsors/index.html"><h3>Sponsors</h3></a>
+                        </div>
+                      </div>
+                </div>
+
+
+                <script>
+                    function openNav() {
+                      document.getElementById("navbar-v2-fullscreen").style.height = "100%";
+                    }
+                    
+                    function closeNav() {
+                      document.getElementById("navbar-v2-fullscreen").style.height = "0%";
+                    }
+                    </script>
             </nav>
         </header>
         <main class="nieuws">

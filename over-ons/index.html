@@ -17,16 +17,58 @@
 
     <body id="over-ons">
         <header>
-            <nav class="navbar">
-                <ul>
-                    <li style="float: left;" id="sitename"><img src="https://cdn.blacksparow.gq/gokyo-cuijk/images/Gokyo%20Cuijk.png"></li>
-                    <li><a href="../sponsors/index.html"><h3 style="margin: 0px; padding: 0px;">Sponsors</h3></a></li>
-                    <li><a href="" class="active"><h3 style="margin: 0px; padding: 0px;">Over Ons</h3></a></li>
-                    <li><a href="../contact/index.html"><h3 style="margin: 0px; padding: 0px;">Contact</h3></a></li>
-                    <li><a href="../informatie/inschrijven/index.html"><h3 style="margin: 0px; padding: 0px;">Inschrijven</h3></a></li>
-                    <li><a href="../informatie/index.html"><h3 style="margin: 0px; padding: 0px;">Informatie</h3></a></li>
-                    <li><a href="../index.html" class="first"><h3 style="margin: 0px; padding: 0px;">Home</h3></a></li>
-                </ul>
+            <nav>
+                <div id="navbar-v1">
+                    <div class="navbar-v1-sitelogo">
+                        <a><img src="https://cdn.blacksparow.gq/gokyo-cuijk/images/Gokyo%20Cuijk.png"></a>
+                    </div>
+                    <div class="navbar-v1-items">
+                        <a href="../index.html"><h3>Home</h3></a>
+                        <a href="../informatie/index.html"><h3>Informatie</h3></a>
+                        <a href="../informatie/inschrijven/index.html"><h3>Inschrijven</h3></a>
+                        <a href="../contact/index.html"><h3>Contact</h3></a>
+                        <a href="../over-ons/index.html" class="active"><h3>Over Ons</h3></a>
+                        <a href="../sponsors/index.html"><h3>Sponsors</h3></a>
+                        
+                        
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
+                </div>
+
+
+                
+                <div id="navbar-v2">
+                    <div class="navbar-v2-sitelogo">
+                        <a><img src="https://cdn.blacksparow.gq/gokyo-cuijk/images/Gokyo%20Cuijk.png"></a>
+                    </div>
+                    <div class="navbar-v2-items">
+                        <a onclick="openNav()"><h2>&#9776;</h2></a>
+                    </div>
+                    <div id="navbar-v2-fullscreen" class="nav-overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="nav-overlay-content">
+                            <a href="../index.html"><h3>Home</h3></a>
+                            <a href="../informatie/index.html"><h3>Informatie</h3></a>
+                            <a href="../informatie/inschrijven/index.html"><h3>Inschrijven</h3></a>
+                            <a href="../contact/index.html"><h3>Contact</h3></a>
+                            <a href="../over-ons/index.html" class="active"><h3>Over Ons</h3></a>
+                            <a href="../sponsors/index.html"><h3>Sponsors</h3></a>
+                        </div>
+                      </div>
+                </div>
+
+
+                <script>
+                    function openNav() {
+                      document.getElementById("navbar-v2-fullscreen").style.height = "100%";
+                    }
+                    
+                    function closeNav() {
+                      document.getElementById("navbar-v2-fullscreen").style.height = "0%";
+                    }
+                    </script>
             </nav>
         </header>
         <main class="over-ons">
@@ -50,40 +92,61 @@
                     <br>
                     Regelmattig vinden er toernooien plaats waar je gratis of tegen een kleine vergoeding aan meegedaan kan worden!
                 </p>
+            </div>    
+        </main>
+
+        <footer>
+            <div class="flex-box-1">
+                <div class="block-1">
+                    <img src="../images/Blank-Logo.png">
+                    <h3>Page Version: v0.7</h3>
+                </div>
+                <div class="block-2">
+                    <div class="block-2-1">
+                        <h3>Over deze site:</h3>
+                        <p>
+                            Deze site is gemaakt voor de vereniging Gokyo Cuijk, dit is een judo vereniging die al een even rond hangt. Deze site is er om de vereniging een nieuwe moderne look te geven en om te zorgen dat Gokyo ook met de tijd mee gaat.
+                        </p>
+                    </div>
+                    <div class="block-2-2-v1">
+                        <h3>All Pages:</h3>
+                        <div class="block-2-2-1">
+                            <p>- <a href="../index.html">Home</a></p>
+                            <p>- <a href="../informatie/index.html">Informatie</a></p>
+                            <p>-- <a href="https://www.facebook.com/gokyocuijk/" target="_blank">Nieuws</a></p>
+                            <p>-- <a href="../informatie/lestijden/index.html">Les Tijden</a></p>
+                            <p>-- <a href="../informatie/agenda/index.html">Agenda</a></p>
+                            <p>-- <a href="../informatie/huisregels/index.html">Huisregels</a></p>
+                        </div>
+                        <div class="block-2-2-2">
+                            <p>-- <a href="../informatie/exameneisen/index.html">Examen Eisen</a></p>
+                            <p>-- <a href="../informatie/inschrijven/index.html">Inschrijven</a></p>
+                            <p>- <a href="../contact/index.html">Contact</a></p>
+                            <p>- <a href="../over-ons/index.html">Over ons</a></p>
+                            <p>- <a href="../sponsors/index.html">Sponsors</a></p>
+                        </div>
+                    </div>
+                    <div class="block-2-2-v2">
+                        <h3>All Pages:</h3>
+                        <div class="block-2-2-1">
+                            <a href="../index.html">Home</a>
+                            <a href="../informatie/index.html">Informatie</a>
+                            <a href="https://www.facebook.com/gokyocuijk/" target="_blank">Nieuws</a>
+                            <a href="../informatie/lestijden/index.html">Les Tijden</a>
+                            <a href="../informatie/agenda/index.html">Agenda</a>
+                            <a href="../informatie/huisregels/index.html">Huisregels</a>
+                        </div>
+                        <div class="block-2-2-2">
+                            <a href="../informatie/exameneisen/index.html">Examen Eisen</a>
+                            <a href="../informatie/inschrijven/index.html">Inschrijven</a>
+                            <a href="../contact/index.html">Contact</a>
+                            <a href="../over-ons/index.html">Over ons</a>
+                            <a href="../sponsors/index.html">Sponsors</a>
+                        </div>
+                    </div>
+                </div>
             </div>
             
-        </main>
-        <footer>
-            <div class="block-1">
-                <img src="../images/Blank-Logo.png">
-                <h3>Page Version: v0.2</h3>
-            </div>
-            <div class="block-2">
-                <div class="block-2-1">
-                    <h3>Over deze site:</h3>
-                    <p style="width: 75%;">
-                        Deze site is gemaakt voor de vereniging Gokyo Cuijk, dit is een judo vereniging die al een even rond hangt. Deze site is er om de vereniging een nieuwe moderne look te geven en om te zorgen dat Gokyo ook met de tijd mee gaat.
-                    </p>
-                </div>
-                <div class="block-2-2">
-                    <h3>All Pages:</h3>
-                    <div class="block-2-2-1">
-                        <p>- <a href="../index.html">Home</a></p>
-                        <p>- <a href="../informatie/index.html">Informatie</a></p>
-                        <p>-- <a href="https://www.facebook.com/gokyocuijk/" target="_blank">Nieuws</a></p>
-                        <p>-- <a href="../informatie/lestijden/index.html">Les Tijden</a></p>
-                        <p>-- <a href="../informatie/agenda/index.html">Agenda</a></p>
-                        <p>-- <a href="../informatie/huisregels/index.html">Huisregels</a></p>
-                    </div>
-                    <div class="block-2-2-2">
-                        <p>-- <a href="../informatie/exameneisen/index.html">Examen Eisen</a></p>
-                        <p>-- <a href="../informatie/inschrijven/index.html">Inschrijven</a></p>
-                        <p>- <a href="../contact/index.html">Contact</a></p>
-                        <p>- <a href="../over-ons/index.html">Over ons</a></p>
-                        <p>- <a href="../sponsors/index.html">Sponsors</a></p>
-                    </div>
-                </div>
-            </div>
             <div class="block-3">
                 <h3>Copyright - Gokyo Cuijk | <a href="https://blacksparow.gq" target="_blank">Finn Josten</a></h3>
             </div>
