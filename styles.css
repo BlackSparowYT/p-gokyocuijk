@@ -1533,6 +1533,14 @@ footer .block-2-2-1, footer .block-2-2-2 {
 
 /*** Recent Page ***/
 
+.recent {
+    height: calc(100vh - 230px);
+}
+
+
+
+/* Recent Hero */
+
 .recent-hero {
     width: 100%;
     height: 50vh;
@@ -1563,10 +1571,105 @@ footer .block-2-2-1, footer .block-2-2-2 {
     font-weight: bold !important;
 }
 
-.recent h3 {
+.recent h3,
+.recent h2 {
     margin-top: 50px;
     text-align: center;
     color: #fff;
+}
+
+
+
+/* Recent Slideshow */
+
+.recent img {
+    vertical-align: middle;
+}
+
+.recent .slidesImg {
+    width: 100%;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.recent .container {
+    position: relative;
+    width: 50%;
+    margin-left: 25%;
+}
+
+/* Hide the images by default */
+.recent .mySlides {
+    display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.recent .cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.recent .prev,
+.recent .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.recent .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.recent .prev:hover,
+.recent .next:hover {
+    background-color: #2f2f2f;
+}
+
+/* Number text (1/3 etc) */
+.recent .numbertext {
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Container for image text */
+.recent .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+}
+
+.recent .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Six columns side by side */
+.recent .column {
+    float: left;
+    width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.recent .demo {
+    opacity: 0.6;
+}
+
+.recent .active,
+.recent .demo:hover {
+    opacity: 1;
 }
 
 
@@ -1929,104 +2032,4 @@ footer .block-2-2-1, footer .block-2-2-2 {
 }
 .sponsors .sponsors4 img {
     background-color: #000;
-}
-
-
-
-
-
-
-/* Recent Page */
-
-.recent img {
-  vertical-align: middle;
-}
-
-.recent .slidesImg {
-    width: 100%;
-}
-
-/* Position the image container (needed to position the left and right arrows) */
-.recent .container {
-  position: relative;
-  width: 50%;
-  margin-left: 25%;
-}
-
-/* Hide the images by default */
-.recent .mySlides {
-  display: none;
-}
-
-/* Add a pointer when hovering over the thumbnail images */
-.recent .cursor {
-  cursor: pointer;
-}
-
-/* Next & previous buttons */
-.recent .prev,
-.recent .next {
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.recent .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.recent .prev:hover,
-.recent .next:hover {
-  background-color: #2f2f2f;
-}
-
-/* Number text (1/3 etc) */
-.recent .numbertext {
-  color: #fff;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* Container for image text */
-.recent .caption-container {
-  text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
-  color: white;
-}
-
-.recent .row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Six columns side by side */
-.recent .column {
-  float: left;
-  width: 16.66%;
-}
-
-/* Add a transparency effect for thumnbail images */
-.recent .demo {
-  opacity: 0.6;
-}
-
-.recent .active,
-.recent .demo:hover {
-  opacity: 1;
 }
