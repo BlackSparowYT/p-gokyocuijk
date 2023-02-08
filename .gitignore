@@ -1,2 +1,6 @@
 
 *.zip
+*.NEF
+*.DS_Store
+images/informatie/recent/
+!images/informatie/recent/recent.png
