@@ -7,7 +7,7 @@
         <meta name="description" content="Your description goes here">
         <title>Huisregels | Gokyo Cuijk</title>
         <link rel="stylesheet" href="../../styles.css">
-        <link rel="icon" type="image/x-icon" href="https://cdn.blacksparow.gq/gokyo-cuijk/images/favicon.png">
+        <link rel="icon" type="image/x-icon" href="../../images/favicon.png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap" rel="stylesheet">
@@ -21,28 +21,55 @@
             <nav>
                 <div id="navbar-v1">
                     <div class="navbar-v1-sitelogo">
-                        <a><img src="https://cdn.blacksparow.gq/gokyo-cuijk/images/Gokyo%20Cuijk.png"></a>
+                        <a><img src="../../images/navbar-logo.png"></a>
                     </div>
                     <div class="navbar-v1-items">
-                        <a href="../../index.html"><h3>Home</h3></a>
-                        <a href="../../informatie/index.html" class="active"><h3>Informatie</h3></a>
-                        <a href="../../informatie/inschrijven/index.html"><h3>Inschrijven</h3></a>
-                        <a href="../../contact/index.html"><h3>Contact</h3></a>
-                        <a href="../../over-ons/index.html"><h3>Over Ons</h3></a>
-                        <a href="../../sponsors/index.html"><h3>Sponsors</h3></a>
-                        
-                        
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                            <i class="fa fa-bars"></i>
-                        </a>
+                        <a href="../../index.html" class="hoverbtn"><h3>Home</h3></a>
+                        <div class="dropdown">
+                            <a onclick="myFunction3()" class="dropbtn"><h3>Informatie</h3></a>
+                            <div id="dropdownMenu" class="dropdown-content">
+                                <a href="https://www.facebook.com/gokyocuijk/">Nieuws</a>
+                                <a href="../../informatie/lestijden/index.html">Les Tijden</a>
+                                <a href="../../informatie/agenda/index.html">Agenda</a>
+                                <a href="../../informatie/huisregels/index.html">Huisregels</a>
+                                <a href="../../informatie/examens/index.html">Examens</a>
+                                <a href="../../informatie/inschrijven/index.html">Inschrijven</a>
+                                <a href="../../informatie/recent/index.html">Recent</a>
+                            </div>
+                        </div>
+                        <a href="../../contact/index.html" class="hoverbtn"><h3>Contact</h3></a>
+                        <a href="../../over-ons/index.html" class="hoverbtn"><h3>Over Ons</h3></a>
+                        <a href="../../sponsors/index.html" class="hoverbtn"><h3>Sponsors</h3></a>
                     </div>
                 </div>
+
+                <script>
+                    /* When the user clicks on the button, 
+                    toggle between hiding and showing the dropdown content */
+                    function myFunction3() {
+                      document.getElementById("dropdownMenu").classList.toggle("show");
+                    }
+                    
+                    // Close the dropdown if the user clicks outside of it
+                    window.onclick = function(event) {
+                      if (!event.target.matches('.dropbtn')) {
+                        var dropdowns = document.getElementsByClassName("dropdown-content");
+                        var i;
+                        for (i = 0; i < dropdowns.length; i++) {
+                          var openDropdown = dropdowns[i];
+                          if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                          }
+                        }
+                      }
+                    }
+                </script>
 
 
                 
                 <div id="navbar-v2">
                     <div class="navbar-v2-sitelogo">
-                        <a><img src="https://cdn.blacksparow.gq/gokyo-cuijk/images/Gokyo%20Cuijk.png"></a>
+                        <a><img src="../../images/navbar-logo.png"></a>
                     </div>
                     <div class="navbar-v2-items">
                         <a onclick="openNav()"><h2>&#9776;</h2></a>
@@ -52,7 +79,7 @@
                         <div class="nav-overlay-content">
                             <a href="../../index.html"><h3>Home</h3></a>
                             <a href="../../informatie/index.html" class="active"><h3>Informatie</h3></a>
-                            <a href="../../informatie/inschrijven/index.html"><h3>Inschrijven</h3></a>
+                            <a href="../../informatie/inschrijven/index.html" class="active"><h3>Inschrijven</h3></a>
                             <a href="../../contact/index.html"><h3>Contact</h3></a>
                             <a href="../../over-ons/index.html"><h3>Over Ons</h3></a>
                             <a href="../../sponsors/index.html"><h3>Sponsors</h3></a>
@@ -62,14 +89,9 @@
 
 
                 <script>
-                    function openNav() {
-                      document.getElementById("navbar-v2-fullscreen").style.height = "100%";
-                    }
-                    
-                    function closeNav() {
-                      document.getElementById("navbar-v2-fullscreen").style.height = "0%";
-                    }
-                    </script>
+                    function openNav() { document.getElementById("navbar-v2-fullscreen").style.height = "100%"; }
+                    function closeNav() { document.getElementById("navbar-v2-fullscreen").style.height = "0%"; }
+                </script>
             </nav>
         </header>
         <main class="inschrijven">
@@ -80,95 +102,79 @@
                     </div>
                 </div>
             </div>
-            <div class="regels-text">
-                <div class="inschrijven-1" style="display: normal;">
+            <div class="flex-box">
+                <div class="block block-LT">
                     <h3>Inschrijven bij Gokyo Cuijk:</h3>
                     <p>
                         Wil je graag bij onze club inschrijven?
+                        Je kunt hieronder het inschrijf formulier invullen.
                         <br>
-                        Je kunt hieronder het inschrijf formulier openen en downloaden.
+                        Zorg ervoor dat je dit goed doorleest. Na het invullen zullen wij contact met u openen via de opgegeven email.
                     </p>
-                    <a class="formulier" href="../../files/inschrijven-gokyo.pdf#toolbar=0" target="_blank" download="Inschrijven Gokyo">Open Formulier</a>
-                    <a class="formulier" href="../../files/inschrijven-gokyo.doxc" target="_blank" download="Inschrijven Gokyo">Download Formulier</a>
-                    <br>
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScTfKRPGl39syvFFTRcVk7qqIdYKJacRQhKnB5Nfx2SPnA-qw/viewform"></iframe>
+                    <p>Werkt het formulier niet? Klik dan <a href="https://docs.google.com/forms/d/e/1FAIpQLScTfKRPGl39syvFFTRcVk7qqIdYKJacRQhKnB5Nfx2SPnA-qw/viewform" target="_blank">hier</a></p>
                 </div>
-                <div class="inschrijven-2" style="display: none;">
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
+                <div class="block block-RT">
+                    <!-- zet hier ' style="display: none;"' tussen <h3 en > om de tekst weg te halen -->
+                    <h3>Er zijn tijdelijk geen toernooien</h3>
+
+                    <!-- Haal 'style="display: none;"' weg om de tekst te laten zien-->
+                    <h3 style="display: none;">Inschrijven voor toernooien:</h3>
+                    <p style="display: none;">
+                        Ben je je blaadje kwijt wat je hebt gekregen in de les, of heb je er geen gekregen?
+                        <br>
+                        Je kunt hieronder het inschrijf formulier (nog een keer) openen en printen.
+                    </p>
+                    <iframe style="display: none;" src="https://docs.google.com/forms/d/e/1FAIpQLScTfKRPGl39syvFFTRcVk7qqIdYKJacRQhKnB5Nfx2SPnA-qw/viewform"></iframe>
+                </div>
+                <!-- Haal hier 'style="display: none;"' weg om het block weer te laten zien-->
+                <div class="block block-L" style="display: none;">
                     <h3>Inschrijven voor toernooien:</h3>
                     <p>
                         Ben je je blaadje kwijt wat je hebt gekregen in de les, of heb je er geen gekregen?
                         <br>
-                        Je kunt hieronder het inschrijf formulier (nog een keer) downloaden.
+                        Je kunt hieronder het inschrijf formulier (nog een keer) openen en printen.
                     </p>
-                    <br>
-                    <p>
-                        <strong>write.($load-naam-toernooi)</strong>
-                    </p>
-                    <a class="formulier" href="../../files/Inschrijving1.pdf#toolbar=0" target="_blank" download="Formulier1">Open Formulier</a>
-                    <a class="formulier" href="../../files/Inschrijving1.docx" target="_blank" download="Formulier1">Download Formulier</a>
-                    <br>
-                </div>
-                <div class="inschrijven-3" style="display: none;">
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <h3>Inschrijven voor toernooien:</h3>
-                    <p>
-                        Ben je je blaadje kwijt wat je hebt gekregen in de les, of heb je er geen gekregen?
-                        <br>
-                        Je kunt hieronder het inschrijf formulier (nog een keer) downloaden.
-                    </p>
-                    <br>
-                    <p>
-                        <strong>write.($load-naam-toernooi)</strong>
-                    </p>
-                    <a class="formulier" href="../../files/Inschrijving1.pdf#toolbar=0" target="_blank" download="Formulier1">Open Formulier</a>
-                    <a class="formulier" href="../../files/Inschrijving1.docx" target="_blank" download="Formulier1">Download Formulier</a>
-                    <br>
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScTfKRPGl39syvFFTRcVk7qqIdYKJacRQhKnB5Nfx2SPnA-qw/viewform"></iframe>
                 </div>
             </div>
         </main>
+
         <footer>
             <div class="flex-box-1">
                 <div class="block-1">
-                    <img src="../../images/Blank-Logo.png">
-                    <h3>Page Version: v0.8</h3>
+                    <img src="../../images/footer-logo.png">
+                    <h3>Page Version: v1.5</h3>
+                    <h3>Site Version: v1.1</h3>
                 </div>
                 <div class="block-2">
                     <div class="block-2-1">
                         <h3>Over deze site:</h3>
                         <p>
-                            Deze site is gemaakt voor de vereniging Gokyo Cuijk, dit is een judo vereniging die al een even rond hangt. Deze site is er om de vereniging een nieuwe moderne look te geven en om te zorgen dat Gokyo ook met de tijd mee gaat.
+                            Deze site is gemaakt voor de vereniging Gokyo Cuijk, over Gokyo Cuijk kun je meer vinden op onze <a href="../../over-ons/index.html">over ons</a> pagina.
                         </p>
                     </div>
                     <div class="block-2-2-v1">
-                        <h3>All Pages:</h3>
+                        <h3>Alle Pagina's:</h3>
                         <div class="block-2-2-1">
                             <p>- <a href="../../index.html">Home</a></p>
                             <p>- <a href="../../informatie/index.html">Informatie</a></p>
                             <p>-- <a href="https://www.facebook.com/gokyocuijk/" target="_blank">Nieuws</a></p>
-                            <p>-- <a href="../../informatie/lestijden/index.html">Les Tijden</a></p>
-                            <p>-- <a href="../../informatie/agenda/index.html">Agenda</a></p>
-                            <p>-- <a href="../../informatie/huisregels/index.html">Huisregels</a></p>
+                            <p>-- <a href="../informatie/lestijden/index.html">Les Tijden</a></p>
+                            <p>-- <a href="../informatie/agenda/index.html">Agenda</a></p>
+                            <p>-- <a href="../informatie/huisregels/index.html">Huisregels</a></p>
                         </div>
                         <div class="block-2-2-2">
                             <p>-- <a href="../../informatie/exameneisen/index.html">Examen Eisen</a></p>
                             <p>-- <a href="../../informatie/inschrijven/index.html">Inschrijven</a></p>
+                            <p>-- <a href="../../informatie/recent/index.html">Recent</a></p>
                             <p>- <a href="../../contact/index.html">Contact</a></p>
                             <p>- <a href="../../over-ons/index.html">Over ons</a></p>
                             <p>- <a href="../../sponsors/index.html">Sponsors</a></p>
                         </div>
                     </div>
                     <div class="block-2-2-v2">
-                        <h3>All Pages:</h3>
+                        <h3>Alle Pagina's:</h3>
                         <div class="block-2-2-1">
                             <a href="../../index.html">Home</a>
                             <a href="../../informatie/index.html">Informatie</a>
@@ -180,6 +186,7 @@
                         <div class="block-2-2-2">
                             <a href="../../informatie/exameneisen/index.html">Examen Eisen</a>
                             <a href="../../informatie/inschrijven/index.html">Inschrijven</a>
+                            <a href="../../informatie/recent/index.html">Recent</a>
                             <a href="../../contact/index.html">Contact</a>
                             <a href="../../over-ons/index.html">Over ons</a>
                             <a href="../../sponsors/index.html">Sponsors</a>
@@ -189,7 +196,7 @@
             </div>
             
             <div class="block-3">
-                <h3>Copyright - Gokyo Cuijk | <a href="https://blacksparow.gq" target="_blank">Finn Josten</a></h3>
+                <h3>&#169;<script>document.write(new Date().getFullYear())</script> - Gokyo Cuijk | <a href="https://design-atlas.nl" target="_blank">Design Atlas</a></h3>
             </div>
         </footer>
     </body>

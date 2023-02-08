@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contact | Gokyo Cuijk</title>
         <link rel="stylesheet" href="../styles.css">
-        <link rel="icon" type="image/x-icon" href="https://cdn.blacksparow.gq/gokyo-cuijk/images/favicon.png">
+        <link rel="icon" type="image/x-icon" href="../images/favicon.png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap" rel="stylesheet">
@@ -20,28 +20,57 @@
             <nav>
                 <div id="navbar-v1">
                     <div class="navbar-v1-sitelogo">
-                        <a><img src="https://cdn.blacksparow.gq/gokyo-cuijk/images/Gokyo%20Cuijk.png"></a>
+                        <a><img src="../images/navbar-logo.png"></a>
                     </div>
                     <div class="navbar-v1-items">
-                        <a href="../index.html"><h3>Home</h3></a>
-                        <a href="../informatie/index.html"><h3>Informatie</h3></a>
-                        <a href="../informatie/inschrijven/index.html"><h3>Inschrijven</h3></a>
-                        <a href="../contact/index.html" class="active"><h3>Contact</h3></a>
-                        <a href="../over-ons/index.html"><h3>Over Ons</h3></a>
-                        <a href="../sponsors/index.html"><h3>Sponsors</h3></a>
+                        <a href="../index.html" class="hoverbtn"><h3>Home</h3></a>
+                        <div class="dropdown">
+                            <a onclick="myFunction3()" class="dropbtn"><h3>Informatie</h3></a>
+                            <div id="dropdownMenu" class="dropdown-content">
+                                <a href="https://www.facebook.com/gokyocuijk/">Nieuws</a>
+                                <a href="../informatie/lestijden/index.html">Les Tijden</a>
+                                <a href="../informatie/agenda/index.html">Agenda</a>
+                                <a href="../informatie/huisregels/index.html">Huisregels</a>
+                                <a href="../informatie/examens/index.html">Examens</a>
+                                <a href="../informatie/inschrijven/index.html">Inschrijven</a>
+                                <a href="../informatie/recent/index.html">Recent</a>
+                            </div>
+                        </div>
+                        <a href="../contact/index.html" class="active hoverbtn"><h3>Contact</h3></a>
+                        <a href="../over-ons/index.html" class="hoverbtn"><h3>Over Ons</h3></a>
+                        <a href="../sponsors/index.html" class="hoverbtn"><h3>Sponsors</h3></a>
                         
                         
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                            <i class="fa fa-bars"></i>
-                        </a>
                     </div>
                 </div>
+
+                <script>
+                    /* When the user clicks on the button, 
+                    toggle between hiding and showing the dropdown content */
+                    function myFunction3() {
+                      document.getElementById("dropdownMenu").classList.toggle("show");
+                    }
+                    
+                    // Close the dropdown if the user clicks outside of it
+                    window.onclick = function(event) {
+                      if (!event.target.matches('.dropbtn')) {
+                        var dropdowns = document.getElementsByClassName("dropdown-content");
+                        var i;
+                        for (i = 0; i < dropdowns.length; i++) {
+                          var openDropdown = dropdowns[i];
+                          if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                          }
+                        }
+                      }
+                    }
+                </script>
 
 
                 
                 <div id="navbar-v2">
                     <div class="navbar-v2-sitelogo">
-                        <a><img src="https://cdn.blacksparow.gq/gokyo-cuijk/images/Gokyo%20Cuijk.png"></a>
+                        <a><img src="../images/navbar-logo.png"></a>
                     </div>
                     <div class="navbar-v2-items">
                         <a onclick="openNav()"><h2>&#9776;</h2></a>
@@ -80,26 +109,40 @@
                 </div>
             </div>
             <div class="contact-gokyo">
-                <h2>Je kunt ons bijna overal bereiken!</h2>
+                <h2>&nbsp;</h2>
                 <div class="flex-box-1">
                     <div class="block-1">
                         <h3>Persoonlijk Contact</h3>
-                        <h4>Aanspreekpunten:</h4>
+                        <h4>Contact Gegevens:</h4>
                         <ul>
                             <li><p><u>Frank van Kaathoven</u>:</p></li>
-                            <li><p>> Taak: Voorzitter Gokyo Cuijk & Judoleraar woensdag.</p></li>
+                            <li><p>> Functie: Voorzitter Gokyo Cuijk & Judoleraar woensdag.</p></li>
                             <li><p>> Telefoon: vraag hier naar in de les.</p></li>
                             <li><p>> Email: voorzitter@gokyo.nl</p></li>
                             <li><p><br></p></li>
                             <li><p><br></p></li>
                             <li><p><u>Remko Jansen</u>:</p></li>
-                            <li><p>> Taak: Judoleraar maandag.</p></li>
+                            <li><p>> Funcite: Judoleraar maandag.</p></li>
                             <li><p>> Telefoon: (+31) 6 23356208</p></li>
+                            <li><p>> Email: Graag appen i.p.v. mailen</p></li>
+                            <li><p><br></p></li>
+                            <li><p><br></p></li>
+                            <li><p><u>Gijs van Kaathoven</u>:</p></li>
+                            <li><p>> Functie: Judoleraar woensdag.</p></li>
+                            <li><p>> Telefoon: (+31) 6 23820034</p></li>
+                            <li><p>> Email: Graag appen i.p.v. mailen</p></li>
+                            <li><p><br></p></li>
+                            <li><p><br></p></li>
+                            <li id="locatie-link"><p><u>Andre Nijnatten</u>:</p></li>
+                            <li><p>> Funcite: Penning Meester & Judoleraar maandag.</p></li>
+                            <li><p>> Telefoon: (+31) 6 41855052</p></li>
+                            <li><p>> Email: Graag appen i.p.v. mailen</p></li>
                         </ul>
                         <br>
                         <br>
                         <br>
                         <h4>Onze locatie:</h4>
+                        <p id="locatie-text">Wij gebruiken de dojo in het gebouw van Sport Centrum Laco om onze lessen in te doen.</p>
                         <div class="mapouter">
                             <div class="gmap_canvas">
                                 <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=Laco%20sportcentrum%20Cuijk&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
@@ -119,16 +162,22 @@
                         <br>
                         <br>
                         <div class="social-links">
-                            <a class="instagram" href="https://www.instagram.com/judo_gokyo_cuijk/" target="_blank">
+                            <a class="instagram social-links-block" href="https://www.instagram.com/judo_gokyo_cuijk/" target="_blank">
                                 <div>
-                                    <img src="https://cdn.blacksparow.gq/gokyo-cuijk/images/instagram.png">
+                                    <img src="../images/contact/instagram.png">
                                     <h3>Instagram</h3>
                                 </div>
                             </a>
-                            <a class="facebook" href="https://www.facebook.com/gokyocuijk" target="_blank">
+                            <a class="facebook social-links-block" href="https://www.facebook.com/gokyocuijk" target="_blank">
                                 <div>
-                                    <img src="https://cdn.blacksparow.gq/gokyo-cuijk/images/facebook.png">
+                                    <img src="../images/contact/facebook.png">
                                     <h3>Facebook</h3>
+                                </div>
+                            </a>
+                            <a class="linkedin social-links-block" href="https://www.linkedin.com/company/judovereniging-gokyo-cuijk/" target="_blank">
+                                <div>
+                                    <img src="../images/contact/linkedin.png">
+                                    <h3>LinkedIn</h3>
                                 </div>
                             </a>
                         </div>
@@ -141,18 +190,19 @@
         <footer>
             <div class="flex-box-1">
                 <div class="block-1">
-                    <img src="../images/Blank-Logo.png">
-                    <h3>Page Version: v0.9</h3>
+                    <img src="../images/footer-logo.png">
+                    <h3>Page Version: v1.4</h3>
+                    <h3>Site Version: v1.1</h3>
                 </div>
                 <div class="block-2">
                     <div class="block-2-1">
                         <h3>Over deze site:</h3>
                         <p>
-                            Deze site is gemaakt voor de vereniging Gokyo Cuijk, dit is een judo vereniging die al een even rond hangt. Deze site is er om de vereniging een nieuwe moderne look te geven en om te zorgen dat Gokyo ook met de tijd mee gaat.
+                            Deze site is gemaakt voor de vereniging Gokyo Cuijk, over Gokyo Cuijk kun je meer vinden op onze <a href="../../over-ons/index.html">over ons</a> pagina.
                         </p>
                     </div>
                     <div class="block-2-2-v1">
-                        <h3>All Pages:</h3>
+                        <h3>Alle Pagina's:</h3>
                         <div class="block-2-2-1">
                             <p>- <a href="../index.html">Home</a></p>
                             <p>- <a href="../informatie/index.html">Informatie</a></p>
@@ -164,13 +214,14 @@
                         <div class="block-2-2-2">
                             <p>-- <a href="../informatie/exameneisen/index.html">Examen Eisen</a></p>
                             <p>-- <a href="../informatie/inschrijven/index.html">Inschrijven</a></p>
+                            <p>-- <a href="../informatie/recent/index.html">Recent</a></p>
                             <p>- <a href="../contact/index.html">Contact</a></p>
                             <p>- <a href="../over-ons/index.html">Over ons</a></p>
                             <p>- <a href="../sponsors/index.html">Sponsors</a></p>
                         </div>
                     </div>
                     <div class="block-2-2-v2">
-                        <h3>All Pages:</h3>
+                        <h3>Alle Pagina's:</h3>
                         <div class="block-2-2-1">
                             <a href="../index.html">Home</a>
                             <a href="../informatie/index.html">Informatie</a>
@@ -182,6 +233,7 @@
                         <div class="block-2-2-2">
                             <a href="../informatie/exameneisen/index.html">Examen Eisen</a>
                             <a href="../informatie/inschrijven/index.html">Inschrijven</a>
+                            <a href="../informatie/recent/index.html">Recent</a>
                             <a href="../contact/index.html">Contact</a>
                             <a href="../over-ons/index.html">Over ons</a>
                             <a href="../sponsors/index.html">Sponsors</a>
@@ -191,7 +243,7 @@
             </div>
             
             <div class="block-3">
-                <h3>Copyright - Gokyo Cuijk | <a href="https://blacksparow.gq" target="_blank">Finn Josten</a></h3>
+                <h3>&#169;<script>document.write(new Date().getFullYear())</script> - Gokyo Cuijk | <a href="https://design-atlas.nl" target="_blank">Design Atlas</a></h3>
             </div>
         </footer>
     </body>

@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home | Gokyo Cuijk</title>
         <link rel="stylesheet" href="styles.css">
-        <link rel="icon" type="image/x-icon" href="https://cdn.blacksparow.gq/gokyo-cuijk/images/favicon.png">
+        <link rel="icon" type="image/x-icon" href="./images/favicon.png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap" rel="stylesheet">
@@ -21,28 +21,55 @@
             <nav>
                 <div id="navbar-v1">
                     <div class="navbar-v1-sitelogo">
-                        <a><img src="https://cdn.blacksparow.gq/gokyo-cuijk/images/Gokyo%20Cuijk.png"></a>
+                        <a><img src="./images/navbar-logo.png"></a>
                     </div>
                     <div class="navbar-v1-items">
-                        <a href="index.html" class="active"><h3>Home</h3></a>
-                        <a href="./informatie/index.html"><h3>Informatie</h3></a>
-                        <a href="./informatie/inschrijven/index.html"><h3>Inschrijven</h3></a>
-                        <a href="./contact/index.html"><h3>Contact</h3></a>
-                        <a href="./over-ons/index.html"><h3>Over Ons</h3></a>
-                        <a href="./sponsors/index.html"><h3>Sponsors</h3></a>
-                        
-                        
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                            <i class="fa fa-bars"></i>
-                        </a>
+                        <a href="index.html" class="active hoverbtn"><h3>Home</h3></a>
+                        <div class="dropdown">
+                            <a onclick="myFunction3()" class="dropbtn"><h3>Informatie</h3></a>
+                            <div id="dropdownMenu" class="dropdown-content">
+                                <a href="https://www.facebook.com/gokyocuijk/">Nieuws</a>
+                                <a href="./informatie/lestijden/index.html">Les Tijden</a>
+                                <a href="./informatie/agenda/index.html">Agenda</a>
+                                <a href="./informatie/huisregels/index.html">Huisregels</a>
+                                <a href="./informatie/examens/index.html">Examens</a>
+                                <a href="./informatie/inschrijven/index.html">Inschrijven</a>
+                                <a href="./informatie/recent/index.html">Recent</a>
+                            </div>
+                        </div>
+                        <a href="./contact/index.html" class="hoverbtn"><h3>Contact</h3></a>
+                        <a href="./over-ons/index.html" class="hoverbtn"><h3>Over Ons</h3></a>
+                        <a href="./sponsors/index.html" class="hoverbtn"><h3>Sponsors</h3></a>
                     </div>
                 </div>
+
+                <script>
+                    /* When the user clicks on the button, 
+                    toggle between hiding and showing the dropdown content */
+                    function myFunction3() {
+                      document.getElementById("dropdownMenu").classList.toggle("show");
+                    }
+                    
+                    // Close the dropdown if the user clicks outside of it
+                    window.onclick = function(event) {
+                      if (!event.target.matches('.dropbtn')) {
+                        var dropdowns = document.getElementsByClassName("dropdown-content");
+                        var i;
+                        for (i = 0; i < dropdowns.length; i++) {
+                          var openDropdown = dropdowns[i];
+                          if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                          }
+                        }
+                      }
+                    }
+                </script>
 
 
                 
                 <div id="navbar-v2">
                     <div class="navbar-v2-sitelogo">
-                        <a><img src="https://cdn.blacksparow.gq/gokyo-cuijk/images/Gokyo%20Cuijk.png"></a>
+                        <a><img src="./images/navbar-logo.png"></a>
                     </div>
                     <div class="navbar-v2-items">
                         <a onclick="openNav()"><h2>&#9776;</h2></a>
@@ -77,101 +104,101 @@
 
                 <!-------------------------------------------------->
 
-                <!-- Popup VANAF BLIJVEN! -->
-                <div id="myModal" class="modal">
-                    <div class="modal-content">
-                        <span class="close">&times;</span>
-                        <h2>Voordat je verder gaat graag even dit bericht lezen.</h2>
-                        <br>
-                        <h3>
-                            Heb je dit bericht al een keer gelezen? Dan mag je het weg klikken. Zo niet, lees het dan veder.
-                        </h3>
-                        <br>
-                        <br>
-                        <p>
-                            <strong>Graag willen wij even aandacht duiden naar de volgende 2 dingen:</strong>
+                    <!-- Popup STAAT UIT VANAF BLIJVEN! 
+                    <div id="myModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <h2>Voordat je verder gaat graag even dit bericht lezen.</h2>
                             <br>
-                            > De site is nog niet geschikt voor telefoon aangezien de layout nog niet helemaal klopt dus raden wij aan om de site voor nu op een computer te bekijken. Dit probleem zal binnenkort opgelost zijn.
+                            <h3>
+                                Heb je dit bericht al een keer gelezen? Dan mag je het weg klikken. Zo niet, lees het dan veder.
+                            </h3>
                             <br>
                             <br>
-                            > Natuurlijk is het niet de bedoeling dat je problemen ondervindt tijdens het bezoeken van de site, vind je er toch wel een? doe dan het volgende. 
-                                <br>1. Maak een foto (of video) van het probleem.
-                                <br>2. Stuur de foto (of video) samen met waar je het op de site hebt gevonden in een email naar: <a href="mailto:blacksparowyt@gmail.com">blacksparowyt@gmail.com</a>.
-                        </p>
+                            <p>
+                                <strong>Graag willen wij even aandacht duiden naar de volgende 2 dingen:</strong>
+                                <br>
+                                > De site is bijna geschikt voor telefoons maar voor nu raden we nog steeds aan om op een computer te bekijken. Dit probleem zal binnenkort opgelost zijn.
+                                <br>
+                                <br>
+                                > Natuurlijk is het niet de bedoeling dat je problemen ondervindt tijdens het bezoeken van de site, vind je er toch wel een? doe dan het volgende. 
+                                    <br>1. Maak een foto (of video) van het probleem.
+                                    <br>2. Stuur de foto (of video) samen met waar je het op de site hebt gevonden in een email naar: <a href="mailto:bugs@design-atlas.nl">bugs@design-atlas.nl</a>.
+                            </p>
+                        </div>
                     </div>
-                </div>
 
-                <script>
-        
+                    <script>
+            
                     //GRAAG VANAF BLIJVEN!!!
-            
-            
-                // checks if one day has passed. 
-                function hasOneDayPassed() {
-            
-                // get today's date. eg: "7/37/2007"
-                var date = new Date().toLocaleDateString();
-            
-                // if there's a date in localstorage and it's equal to the above: 
-                // inferring a day has yet to pass since both dates are equal.
-                if( localStorage.yourapp_date == date ) 
-                    return false;
-            
-                // this portion of logic occurs when a day has passed
-                localStorage.yourapp_date = date;
-                return true;
-                }
-            
-            
-                // some function which should run once a day
-                function runOncePerDay(){
-                    if( !hasOneDayPassed() ) return false;
-            
-            
-            
-            
-            
-            
-            
-                    // Get the modal
-                    var modal = document.getElementById("myModal");
-                    
-                    // Get the button that opens the modal
-                    var btn = document.getElementById("myBtn");
-                    
-                    // Get the <span> element that closes the modal
-                    var span = document.getElementsByClassName("close")[0];
-                    
-                    //automaticly open the popup
-                    window.addEventListener("load", function(){
-                    setTimeout(
-                        function open(event){
-                            modal.style.display = "block";
-                        },
-                        1000
-                    )
-                    }); 
-            
-                    // When the user clicks on <span> (x), close the modal
-                    span.onclick = function() {
-                    modal.style.display = "none";
+                
+                
+                    // checks if one day has passed. 
+                    function hasOneDayPassed() {
+                
+                    // get today's date. eg: "7/37/2007"
+                    var date = new Date().toLocaleDateString();
+                
+                    // if there's a date in localstorage and it's equal to the above: 
+                    // inferring a day has yet to pass since both dates are equal.
+                    if( localStorage.yourapp_date == date ) 
+                        return false;
+                
+                    // this portion of logic occurs when a day has passed
+                    localStorage.yourapp_date = date;
+                    return true;
                     }
-                    
-                    // When the user clicks anywhere outside of the modal, close it
-                    window.onclick = function(event) {
-                    if (event.target == modal) {
+                
+                
+                    // some function which should run once a day
+                    function runOncePerDay(){
+                        if( !hasOneDayPassed() ) return false;
+                
+                
+                
+                
+                
+                
+                
+                        // Get the modal
+                        var modal = document.getElementById("myModal");
+                        
+                        // Get the button that opens the modal
+                        var btn = document.getElementById("myBtn");
+                        
+                        // Get the <span> element that closes the modal
+                        var span = document.getElementsByClassName("close")[0];
+                        
+                        //automaticly open the popup
+                        window.addEventListener("load", function(){
+                        setTimeout(
+                            function open(event){
+                                modal.style.display = "block";
+                            },
+                            1000
+                        )
+                        }); 
+                
+                        // When the user clicks on <span> (x), close the modal
+                        span.onclick = function() {
                         modal.style.display = "none";
+                        }
+                        
+                        // When the user clicks anywhere outside of the modal, close it
+                        window.onclick = function(event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                        }
+                
                     }
-                    }
-            
-                }
-            
-            
-                runOncePerDay();
-                runOncePerDay();
-                </script>
+                
+                
+                    runOncePerDay();
+                    runOncePerDay();
+                    </script>
     
-                <!-------------------------------------------------->
+                ------------------------------------------------>
     
                 
 
@@ -183,23 +210,11 @@
                     </div>
                 </div>
             </div>
-            <!--<div class="over-gokyo">
-                <h3>Over Gokyo:</h3>
-                <p>
-                    Budovereniging Gokyo bestaat sinds 1975 (fusie JCC en JCC-N). 
-                    <br>
-                    <br>
-                    Gokyo heeft als visie judo te promoten vanuit een recreatieve beleving. Met name de kwaliteit van het judo, het respect voor de sport en voor andere mensen staat voor Gokyo centraal. 
-                    <br>
-                    <br>
-                    Ook is er natuurlijk ruimte voor judoka's die meer willen doen aan wedstrijden. 
-                </p>
-            </div>-->
-
-
-            <div class="info2">
-                <div class="separator2t"></div>
-                <div class="item-text-2">
+            <div class="separator1">
+                <div class="separator"></div>
+            </div>
+            <div class="text-block-1">
+                <div class="item-text-1">
                     <h3>Wat is judo?</h3>
                     <p>
                         Judo werd door Jugoro Kano (1860 1938) ontwikkeld vanuit de traditionele Japanse vechtkunst Jiu-Jitsu. Voor de pedagoog Kano was judo niet zomaar een sport. Hij beschouwde het vooral als een opvoedkundige methode.
@@ -213,21 +228,22 @@
                         Judo is bovendien beschaafd. Zonder je tegenstander te blesseren leer je hem of haar te overmeesteren.
                     </p>
                 </div>
-                <div class="separator2t2"></div>
             </div>
-            <div class="info1">
-                <div class="separator1t"></div>
-                <div class="item-text-1">
+            <div class="separator2">
+                <div class="separator"></div>
+            </div>
+            <div class="text-block-2">
+                <div class="item-text-2">
                     <h3>Judo kun je alleen maar leren door het te doen!</h3>
                     <p>
-                        Judo is een sport voor iedereen. 
+                        Judo is een sport voor iedereen!
                         <br>
-                        Voor jong en oud en voor zowel de heren als de dames. 
+                        Voor jong of oud en voor zowel de heren als de dames. 
                         <br>
-                        Tienduizenden judoka's beoefenen de judosport met veel enthousiasme. 
+                        Al tienduizenden judoka's beoefenen de judosport met veel enthousiasme. 
                         <br>
                         <br>
-                        Tevens is judo ook nog eens een Olympische sport. Er zijn al meerdere Nederlanders wereld-, Europees en/of Olympisch kampioen geworden. 
+                        Tevens is judo ook nog eens een Olympische sport. Er zijn al meerdere Nederlanders wereld- / Europees Olympisch kampioen geworden. 
                         <br>
                         Een aantal judoka's zijn actief in de wedstrijdsport maar het merendeel beperkt zich tot het trainen bij de club. 
                         <br>
@@ -235,37 +251,43 @@
                         <br>
                         <br>
                         <br>
-                        Zou jij een keer mee te doen en je woont rond om cuijk? 
+                        Wil jij het een keer mee doen?
                         <br>
-                        Kom eens een keer langs om een proefles te doen!
+                        Kom eens een keer langs voor een proefles! Je kan 3 proeflessen gratis volgen om te kijken of je het leuk vind. 
+                        <br>
+                        Wanneer je een les kan volgen kun je hier onder vinden.
                     </p>
+                    <div id="bttns-block">
+                        <a href="./informatie/lestijden/index.html">Lestijden</a>
+                        <a href="./contact/index.html#locatie-link">Locatie</a>
+                    </div>
                 </div>
-                <div class="separator1b"></div>
             </div>
-
-
-
+            <div class="separator3">
+                <div class="separator"></div>
+            </div>
             
-
-
+            
         </main>
+        
         <footer>
             <div class="flex-box-1">
                 <div class="block-1">
-                    <img src="./images/Blank-Logo.png">
-                    <h3>Page Version: v0.4</h3>
+                    <img src="./images/footer-logo.png">
+                    <h3>Page Version: v1.1</h3>
+                    <h3>Site Version: v1.1</h3>
                 </div>
                 <div class="block-2">
                     <div class="block-2-1">
                         <h3>Over deze site:</h3>
                         <p>
-                            Deze site is gemaakt voor de vereniging Gokyo Cuijk, dit is een judo vereniging die al een even rond hangt. Deze site is er om de vereniging een nieuwe moderne look te geven en om te zorgen dat Gokyo ook met de tijd mee gaat.
+                            Deze site is gemaakt voor de vereniging Gokyo Cuijk, over Gokyo Cuijk kun je meer vinden op onze <a href="./over-ons/index.html">over ons</a> pagina.
                         </p>
                     </div>
                     <div class="block-2-2-v1">
-                        <h3>All Pages:</h3>
+                        <h3>Alle Pagina's:</h3>
                         <div class="block-2-2-1">
-                            <p>- <a href="./index.html">Home</a></p>
+                            <p>- <a href="index.html">Home</a></p>
                             <p>- <a href="./informatie/index.html">Informatie</a></p>
                             <p>-- <a href="https://www.facebook.com/gokyocuijk/" target="_blank">Nieuws</a></p>
                             <p>-- <a href="./informatie/lestijden/index.html">Les Tijden</a></p>
@@ -275,13 +297,14 @@
                         <div class="block-2-2-2">
                             <p>-- <a href="./informatie/exameneisen/index.html">Examen Eisen</a></p>
                             <p>-- <a href="./informatie/inschrijven/index.html">Inschrijven</a></p>
+                            <p>-- <a href="./informatie/recent/index.html">Recent</a></p>
                             <p>- <a href="./contact/index.html">Contact</a></p>
                             <p>- <a href="./over-ons/index.html">Over ons</a></p>
                             <p>- <a href="./sponsors/index.html">Sponsors</a></p>
                         </div>
                     </div>
                     <div class="block-2-2-v2">
-                        <h3>All Pages:</h3>
+                        <h3>Alle Pagina's:</h3>
                         <div class="block-2-2-1">
                             <a href="./index.html">Home</a>
                             <a href="./informatie/index.html">Informatie</a>
@@ -302,7 +325,7 @@
             </div>
             
             <div class="block-3">
-                <h3>Copyright - Gokyo Cuijk | <a href="https://blacksparow.gq" target="_blank">Finn Josten</a></h3>
+                <h3>&#169;<script>document.write(new Date().getFullYear())</script> - Gokyo Cuijk | <a href="https://design-atlas.nl" target="_blank">Design Atlas</a></h3>
             </div>
         </footer>
     </body>
