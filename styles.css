@@ -1372,6 +1372,13 @@ footer .block-2-2-1, footer .block-2-2-2 {
     font-weight: bold !important;
 }
 
+.inschrijven h2,
+.inschrijven h3 {
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+}
+
 .inschrijven .flex-box {
     display: flex;
     align-items: flex-start;
@@ -1388,19 +1395,25 @@ footer .block-2-2-1, footer .block-2-2-2 {
     text-align: center; 
 }
 
+.inschrijven .block-MT {
+    width: 100%;
+    min-height: 100vh;
+    color: #fff;   
+    text-align: center; 
+    margin: 0 2.5% 0 0;
+}
+
+
 .inschrijven .flex-box .block-LT { margin: 0 2.5% 0 2.5%; }
 .inschrijven .flex-box .block-RT { margin-left: 0 2.5% 0 2.5%; }
 .inschrijven .flex-box .block-L { margin: 40px 2.5% 0 2.5%; }
 .inschrijven .flex-box .block-R { margin-left: 40px 2.5% 0 2.5%; }
 
 
-.inschrijven .flex-box .block h3 { margin: 40px 0 0 0; }
-.inschrijven .flex-box .block p { margin: 10px 0 0 0; }
-
-.inschrijven .flex-box .block iframe {
+.inschrijven .block iframe {
     margin: 10px 0 0 20px;
     width: 95%;
-    height: 70vh;
+    height: 80vh;
     border-radius: 10px;
 }
 
@@ -1932,7 +1945,7 @@ footer .block-2-2-1, footer .block-2-2-2 {
 .sponsors-hero {
     width: 100%;
     height: 60vh;
-    background-image: url(./images/home/hero-image.png);
+    background-image: url(./images/sponsors/sponsors.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1948,17 +1961,20 @@ footer .block-2-2-1, footer .block-2-2-2 {
     justify-content: center;
     align-items: center;
     text-align: center;
+
 }
 
 .sponsors-hero .hero-text {
-    margin-top: -30vh;
+    margin-top: -20vh;
     font-size: 35px !important;
     font-family: 'Hanalei Fill', cursive !important;
     font-weight: bold !important;
+    color: #fff;
 }
 
 
-/** Over Gokyo **/
+
+/** Sponsors **/
 
 .sponsors .flex-box {
     display: flex;
