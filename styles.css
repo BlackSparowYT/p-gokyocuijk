@@ -769,6 +769,7 @@ footer .block-2-2-1, footer .block-2-2-2 {
     min-width: 300px;
     max-height: 200px;
     border-radius: 10px;
+    overflow: auto;
 }
 
 
@@ -808,107 +809,60 @@ footer .block-2-2-1, footer .block-2-2-2 {
 
 
 
-.informatie .info-flex-box .block1 {
-    background-image: url(./images/informatie/nieuws.jpg);
+.informatie .info-flex-box .block {
+    width: 100%;
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
+}
+
+.informatie .info-flex-box .block1 {
+    background-image: url(./images/informatie/nieuws.jpg);
+    
 }
 
 .informatie .info-flex-box .block2 {
     background-image: url(./images/informatie/lestijden.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
 }
 
 .informatie .info-flex-box .block3 {
     background-image: url(./images/informatie/agenda.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
 }
 
 .informatie .info-flex-box .block4 {
-    background-image: url(./images/informatie/huisregels.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
+    background-image: url(./images/informatie/inschrijven.jpg);
 }
 
 .informatie .info-flex-box .block5 {
-    background-image: url(./images/informatie/examens.jpg);    
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
+    background-image: url(./images/informatie/inschrijven.jpg);    
 }
 
 .informatie .info-flex-box .block6 {
-    background-image: url(./images/informatie/inschrijven.jpg);    
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
+    background-image: url(./images/informatie/protocollen.jpg);    
+}
+
+.informatie .info-flex-box .block7 {
+    background-image: url(./images/informatie/huisregels.jpg);
+}
+
+.informatie .info-flex-box .block8 {
+    background-image: url(./images/informatie/examens.jpg);    
+}
+
+.informatie .info-flex-box .block9 {
+    background-image: url(./images/informatie/recent/recent.png);    
+
 }
 
 
 @media only screen and (max-width: 960px) {
-    .informatie .flex-box-1 {
-        margin-top: 100px;
-        padding-top: 30px;
-    }
-    
-    .informatie .flex-box-1,
-    .informatie .flex-box-2,
-    .informatie .flex-box-3 {
-        justify-content: center;
-        flex-wrap: wrap;
-        margin-bottom: 0;
-    }
-
-    .info-hero {
-        margin-top: 0;
-    }
-
-
-    @media only screen and (max-width: 960px) {
-        .informatie .flex-box-1 a,
-        .informatie .flex-box-2 a,
-        .informatie .flex-box-3 a {
-        margin: 20px;
-        }
-    }
-
-    .informatie .flex-box-1 .block1,
-    .informatie .flex-box-1 .block2,
-    .informatie .flex-box-1 .block3,
-    .informatie .flex-box-3 .block1,
-    .informatie .flex-box-3 .block2,
-    .informatie .flex-box-3 .block3 {
-        margin: 0;
-    }
-
-    .informatie .flex-box-1 a,
-    .informatie .flex-box-2 a,
-    .informatie .flex-box-3 a {
-        margin-top: 20px;
+    .informatie .info-flex-box a {
+        margin-top: 30px;
+        margin: 0 20px 20px;
     }
 }
 
@@ -1345,6 +1299,97 @@ footer .block-2-2-1, footer .block-2-2-2 {
 
 
 
+
+
+/*** Protocollen Page ***/
+
+.protocollen {
+    min-height: 80vh;
+}
+
+.protocollen-hero {
+    width: 100%;
+    height: 50vh;
+    background-image: url(./images/informatie/protocollen.jpg);
+    background-color: #ff0000b2;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #000;
+}
+
+.protocollen-hero .overlay {
+    width: 100%;
+    height: 30vh;
+    margin-top: 21vh;
+    float: left;
+    background-image: linear-gradient(#00000000, #272727);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.protocollen-hero .hero-text {
+    margin-top: -20vh;
+    font-size: 25px !important;
+    font-family: 'Hanalei Fill', cursive !important;
+    font-weight: bold !important;
+}
+
+.protocollen h3 {
+    margin-top: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+.protocollen-text {
+    margin: 40px 0 20px 30px;
+    color: #fff;
+    width: 55%;
+}
+
+.protocollen-text p {
+    margin-bottom: 20px;
+}
+
+.protocollen-text .links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: fit-content
+}
+
+.protocollen-text .links a {
+    padding: 10px;
+    margin-right: 10px;
+    margin-top: 40px;
+    border: 1px solid #ff0000b2;
+    background-color: #ff0000b2;
+    color: #000;
+    border-radius: 10px;
+}
+
+.protocollen-text .links a:hover {
+    padding: 10px;
+    margin-right: 10px;
+    background-color: #ff000071;
+    color: #000;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+    .protocollen-text {
+        width: 80%;
+    }
+}
+
+
+
+
+
+
 /*** Inschrijven Page ***/
 
 .inschrijven-hero {
@@ -1387,46 +1432,84 @@ footer .block-2-2-1, footer .block-2-2-2 {
 .inschrijven .flex-box {
     display: flex;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
-    min-height: 100vh;
+    min-height: fit-content;
 }
 
 .inschrijven .flex-box .block {
-    width: 45%;
-    min-height: 70vh;
+    min-width: 45%;
+    max-width: 47%;
+    min-height: fit-content;
     color: #fff;   
     text-align: center; 
+    margin: 0 1% 0 1%;
 }
 
 .inschrijven .block-MT {
-    width: 100%;
-    min-height: 100vh;
+    min-height: fit-content;
     color: #fff;   
-    text-align: center; 
-    margin: 0 2.5% 0 0;
+    text-align: center;
+    width: 100%;
 }
 
+.inschrijven > h2 {
+    margin-top: 75px;
+}
 
-.inschrijven .flex-box .block-LT { margin: 0 2.5% 0 2.5%; }
-.inschrijven .flex-box .block-RT { margin-left: 0 2.5% 0 2.5%; }
-.inschrijven .flex-box .block-L { margin: 40px 2.5% 0 2.5%; }
-.inschrijven .flex-box .block-R { margin-left: 40px 2.5% 0 2.5%; }
 
 
 .inschrijven .block iframe {
-    margin: 10px 0 0 20px;
-    width: 95%;
+    margin: 10px 1% 0 1%;
+    width: 98%;
     height: 80vh;
     border-radius: 10px;
+    display: block;
+}
+
+.inschrijven .block .help-text {
+    display: block;
+}
+
+.inschrijven .block .tele-btn {
+    display: none;
+
+    margin-top: 40px;
+    padding: 30px;
+    background-color: #ff0000b2;
+    color: #000;
+    border-radius: 10px;
+    width: 50%;
 }
 
 
+@media only screen and (max-width: 1100px) {
+    .inschrijven .block iframe {
+        display: none;
+    }
+    .inschrijven .block .help-text {
+        display: none;
+    }
+    .inschrijven .block .tele-btn {
+        display: block;
+    }
 
-/**@media only screen and (max-width: 800px) {
-    .inschrijven-text {
-        width: 80%;
+    .inschrijven .flex-box .block,
+    .inschrijven .block-MT {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    @media only screen and (max-width: 500px) {
+        .inschrijven .flex-box {
+            display: block;
+        }
+        .inschrijven .flex-box .block {
+            min-width: 95%;
+            max-width: 100%;
+        }
     }
 }
 
@@ -1966,7 +2049,6 @@ footer .block-2-2-1, footer .block-2-2-2 {
     justify-content: center;
     align-items: center;
     text-align: center;
-
 }
 
 .sponsors-hero .hero-text {
@@ -1986,70 +2068,43 @@ footer .block-2-2-1, footer .block-2-2-2 {
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
-    height: 1000px;
+    height: fit-content;
     margin-top: 40px;
 }
 
 .sponsors .flex-box div {
     width: 30%;
-    min-width: 600px;
+    min-width: 300px;
     height: 40%;
-    min-height: 400px;
+    min-height: 300px;
 
     background-color: #383838;
     border-radius: 10px;
     text-align: center;
-    margin: 0 50px;
+    margin: 20px 50px;
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sponsors a {
+    width: 100%;
 }
 
 .sponsors img {
+    margin-top: 10px;
     padding: 20px;
     border-radius: 10px;
     background-color: #fff;
-    width: 400px;
+    width: calc(90% - 60px);
 }
 
 
-.sponsors .sponsors1 {
-    padding: 20px 0 0 20px;
-    color: #FFF;
-    width: 50%;
-}
-.sponsors .sponsors1 p {
-    padding: 10px 0 0 0;
-}
-
-
-.sponsors .sponsors2 {
-    padding: 20px 0 0 20px;
-    color: #FFF;
-    width: 50%;
-}
-.sponsors .sponsors2 p {
-    padding: 10px 0 0 0;
-}
-
-
-.sponsors .sponsors3 {
-    padding: 20px 0 0 20px;
-    color: #FFF;
-    width: 50%;
-}
-.sponsors .sponsors3 p {
-    padding: 10px 0 0 0;
-}
 .sponsors .sponsors3 img {
     background-color: #000;
-}
-
-
-.sponsors .sponsors4 {
-    padding: 20px 0 0 20px;
-    color: #FFF;
-    width: 50%;
-}
-.sponsors .sponsors4 p {
-    padding: 10px 0 0 0;
 }
 .sponsors .sponsors4 img {
     background-color: #000;
