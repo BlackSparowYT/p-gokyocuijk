@@ -120,32 +120,77 @@
             <h2>Inschrijven Toernooien:</h2>
             <div class="flex-box">
                 <div class="block block-LT">
-                    <!-- zet hier ' style="display: none;"' tussen <h3 en > om de tekst weg te halen -->
-                    <h3 style="display: none;">Er zijn tijdelijk geen toernooien</h3>
+                    <?php 
 
-                    <!-- Haal 'style="display: none;"' weg om de tekst te laten zien-->
-                    <h3>Clubkampioenschappen:</h3>
-                    <p>
-                        Wil jij je inschrijven voor de Clubkampioenschappen doe dat dan hieronder!
-                        <br>
-                        Dit toernooi vind zich plaats bij ons in dojo op zondag 9 april. Inschrijven is mogenlijk tot 24 maart.
-                    </p>
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeQl_Ha1ir-wVirVezyu1TqDQl-rtXZJXPFodeWnwCH-YpXVg/viewform"></iframe>
-                    <a class="tele-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSeQl_Ha1ir-wVirVezyu1TqDQl-rtXZJXPFodeWnwCH-YpXVg/viewform">Open formulier</a>
-                    <p class="help-text" >Laad of werkt het formulier niet? Klik dan <a href="https://docs.google.com/forms/d/e/1FAIpQLSeQl_Ha1ir-wVirVezyu1TqDQl-rtXZJXPFodeWnwCH-YpXVg/viewform" target="_blank">hier</a></p>
+                        // Huidige datum
+                        $date = date("Y/m/d");
+
+                        // Datum dat het inschrijven dicht gaat.
+                        $expDate = "2023/03/24";
+
+                        // Link van het formulier
+                        $formLink = "https://docs.google.com/forms/d/e/1FAIpQLSeQl_Ha1ir-wVirVezyu1TqDQl-rtXZJXPFodeWnwCH-YpXVg/viewform";
+
+                        // Kijk of de huidige datum voor de einddatum ligt, ja dan laat het formulier zien, nee laat niks zien.
+                        if (strtotime($date) < strtotime($expDate)) {
+                            echo '
+                                <h3>[Toernooi Naam]:</h3>
+                                <p>
+                                    Wil jij je inschrijven voor de [Toernooi Naam] doe dat dan hieronder!
+                                    <br>
+                                    Dit toernooi vind zich plaats in [toernooi plaats] op [toernooi datum]. Inschrijven is mogenlijk tot '.$expDate.'.
+                                </p>
+                                <iframe src="'.$formLink.'"></iframe>
+                                <a class="tele-btn" href="'.$formLink.'">Open formulier</a>
+                                <p class="help-text" >Laad of werkt het formulier niet? Klik dan <a href="'.$formLink.'" target="_blank">hier</a></p>
+                            ';
+                        } else {
+                            echo '
+                                <h3>Er zijn tijdelijk geen toernooien</h3>
+                            ';
+
+                            $geenToernooi = 1;
+                        }
+                        
+
+                    ?>
                 </div>
-                
-                <!-- Haal hier 'style="display: none;"' weg om het block weer te laten zien-->
                 <div class="block block-RT">
-                    <h3>Beginnerstoernooi:</h3>
-                    <p>
-                        Wil jij je inschrijven voor het beginnerstoernooi doe dat dan hieronder!
-                        <br>
-                        Dit toernooi vind zich plaats in Boven-Leeuwen op 23 april. Inschrijven is mogenlijk tot 24 maart.
-                    </p>
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfP_zEWvTfxQpeVDGTLLM6w8iZk2H5wILot2p7xO0G-BQ1cVA/viewform"></iframe>
-                    <a class="tele-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfP_zEWvTfxQpeVDGTLLM6w8iZk2H5wILot2p7xO0G-BQ1cVA/viewform">Open formulier</a>
-                    <p class="help-text" >Laad of werkt het formulier niet? Klik dan <a href="https://docs.google.com/forms/d/e/1FAIpQLSfP_zEWvTfxQpeVDGTLLM6w8iZk2H5wILot2p7xO0G-BQ1cVA/viewform" target="_blank">hier</a></p>
+                    <?php 
+
+                        // Huidige datum
+                        $date = date("Y/m/d");
+
+                        // Datum dat het inschrijven dicht gaat.
+                        $expDate = "2023/03/24";
+
+                        // Link van het formulier
+                        $formLink = "https://docs.google.com/forms/d/e/1FAIpQLSeQl_Ha1ir-wVirVezyu1TqDQl-rtXZJXPFodeWnwCH-YpXVg/viewform";
+
+                        // Kijk of de huidige datum voor de einddatum ligt, ja dan laat het formulier zien, nee laat niks zien.
+                        if (strtotime($date) < strtotime($expDate)) {
+                            echo '
+                                <h3>[Toernooi Naam]:</h3>
+                                <p>
+                                    Wil jij je inschrijven voor de [Toernooi Naam] doe dat dan hieronder!
+                                    <br>
+                                    Dit toernooi vind zich plaats in [toernooi plaats] op [toernooi datum]. Inschrijven is mogenlijk tot '.$expDate.'.
+                                </p>
+                                <iframe src="'.$formLink.'"></iframe>
+                                <a class="tele-btn" href="'.$formLink.'">Open formulier</a>
+                                <p class="help-text" >Laad of werkt het formulier niet? Klik dan <a href="'.$formLink.'" target="_blank">hier</a></p>
+                            ';
+                        } else if (strtotime($date) > strtotime($expDate) && $geenToernooi == 1) {
+                            // laat dit alleen zien als beide blokken geen formulier bevat
+                            echo "ㅤ"; 
+                        } else {
+                            echo '
+                                <h3>Er zijn tijdelijk geen toernooien</h3>
+                            ';
+                        }
+
+
+                    ?>
                 </div>
             </div>
         </main>
