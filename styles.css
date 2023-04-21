@@ -1864,6 +1864,10 @@ footer .block-2-2-1, footer .block-2-2-2 {
 
 .contact .social-links .social-links-block {
     margin-bottom: 20px;
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .mapouter {
