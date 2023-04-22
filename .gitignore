@@ -1,6 +1,9 @@
 *.zip
 *.NEF
 *.DS_Store
+
+config.php
+
 images/informatie/recent/
 !images/informatie/recent/recent.png
 *(Conflicted copy * by LAPTOP-FRJ).*
