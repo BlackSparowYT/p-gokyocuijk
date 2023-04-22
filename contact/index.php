@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contact | Gokyo Cuijk</title>
         <link rel="stylesheet" href="../styles.css">
-        <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+        <link rel="icon" type="image/x-icon" href="../files/images/favicon.png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap" rel="stylesheet">
@@ -85,19 +85,19 @@
                         <div class="social-links">
                             <a class="instagram social-links-block" href="https://www.instagram.com/judo_gokyo_cuijk/" target="_blank">
                                 <div>
-                                    <img src="../images/contact/instagram.png">
+                                    <img src="../files/images/contact/instagram.png">
                                     <h3>Instagram</h3>
                                 </div>
                             </a>
                             <a class="facebook social-links-block" href="https://www.facebook.com/gokyocuijk" target="_blank">
                                 <div>
-                                    <img src="../images/contact/facebook.png">
+                                    <img src="../files/images/contact/facebook.png">
                                     <h3>Facebook</h3>
                                 </div>
                             </a>
                             <a class="linkedin social-links-block" href="https://www.linkedin.com/company/judovereniging-gokyo-cuijk/" target="_blank">
                                 <div>
-                                    <img src="../images/contact/linkedin.png">
+                                    <img src="../files/images/contact/linkedin.png">
                                     <h3>LinkedIn</h3>
                                 </div>
                             </a>

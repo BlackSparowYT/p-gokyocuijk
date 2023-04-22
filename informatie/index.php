@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Informatie | Gokyo Cuijk</title>
         <link rel="stylesheet" href="../styles.css">
-        <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+        <link rel="icon" type="image/x-icon" href="../files/images/favicon.png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap" rel="stylesheet">
@@ -16,6 +16,7 @@
     </head>
 
     <body id="informatie">
+        
         <header>
             <?php include("../files/components/navbar.php"); ?>
         </header>
@@ -23,63 +24,63 @@
         <main class="informatie">
             <div class="info-hero">
                 <div class="info-flex-box">
-                    <a href="https://www.facebook.com/gokyocuijk/"><!--./nieuws/index.html-->
+                    <a href="https://www.facebook.com/gokyocuijk/"><!--./nieuws/index.php-->
                         <div class="block block1">
                             <div class="overlay">
                                 <h3>Nieuws</h3>
                             </div>
                         </div>
                     </a>
-                    <a href="./lestijden/index.html">
+                    <a href="./lestijden/index.php">
                         <div class="block block2">
                             <div class="overlay">
                                 <h3>Les Tijden</h3>
                             </div>
                         </div>
                     </a>
-                    <a href="./agenda/index.html">
+                    <a href="./agenda/index.php">
                         <div class="block block3">
                             <div class="overlay">
                                 <h3>Agenda</h3>
                             </div>
                         </div>
                     </a>
-                    <a href="./inschrijven/index.html#gokyo">
+                    <a href="./inschrijven/index.php#gokyo">
                         <div class="block block4">
                             <div class="overlay">
                                 <h3>Inschrijven Gokyo</h3>
                             </div>
                         </div>
                     </a>
-                    <a href="./inschrijven/index.html#toernooi">
+                    <a href="./inschrijven/index.php#toernooi">
                         <div class="block block5">
                             <div class="overlay">
                                 <h3>Inschrijven Toernooien</h3>
                             </div>
                         </div>
                     </a>
-                    <a href="./protocollen/index.html">
+                    <a href="./protocollen/index.php">
                         <div class="block block6">
                             <div class="overlay">
                                 <h3>Gedragsregels & Protocollen</h3>
                             </div>
                         </div>
                     </a>
-                    <a href="./huisregels/index.html">
+                    <a href="./huisregels/index.php">
                         <div class="block block7">
                             <div class="overlay">
                                 <h3>Huisregels</h3>
                             </div>
                         </div>
                     </a>
-                    <a href="./examens/index.html">
+                    <a href="./examens/index.php">
                         <div class="block block8">
                             <div class="overlay">
                                 <h3>Examens</h3>
                             </div>
                         </div>
                     </a>
-                    <a href="./recent/index.html">
+                    <a href="./recent/index.php">
                         <div class="block block9">
                             <div class="overlay">
                                 <h3>Recent</h3>

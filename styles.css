@@ -638,7 +638,7 @@ footer .block-2-2-1, footer .block-2-2-2 {
 .home-hero {
     width: 100%;
     height: 100vh;
-    background-image: url(./images/home/hero-image.png);
+    background-image: url(./files/images/home/hero-image.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -821,40 +821,40 @@ footer .block-2-2-1, footer .block-2-2-2 {
 }
 
 .informatie .info-flex-box .block1 {
-    background-image: url(./images/informatie/nieuws.jpg);
+    background-image: url(./files/images/informatie/nieuws.jpg);
     
 }
 
 .informatie .info-flex-box .block2 {
-    background-image: url(./images/informatie/lestijden.jpg);
+    background-image: url(./files/images/informatie/lestijden.jpg);
 }
 
 .informatie .info-flex-box .block3 {
-    background-image: url(./images/informatie/agenda.jpg);
+    background-image: url(./files/images/informatie/agenda.jpg);
 }
 
 .informatie .info-flex-box .block4 {
-    background-image: url(./images/informatie/inschrijven.jpg);
+    background-image: url(./files/images/informatie/inschrijven.jpg);
 }
 
 .informatie .info-flex-box .block5 {
-    background-image: url(./images/informatie/inschrijven.jpg);    
+    background-image: url(./files/images/informatie/inschrijven.jpg);    
 }
 
 .informatie .info-flex-box .block6 {
-    background-image: url(./images/informatie/protocollen.jpg);    
+    background-image: url(./files/images/informatie/protocollen.jpg);    
 }
 
 .informatie .info-flex-box .block7 {
-    background-image: url(./images/informatie/huisregels.jpg);
+    background-image: url(./files/images/informatie/huisregels.jpg);
 }
 
 .informatie .info-flex-box .block8 {
-    background-image: url(./images/informatie/examens.jpg);    
+    background-image: url(./files/images/informatie/examens.jpg);    
 }
 
 .informatie .info-flex-box .block9 {
-    background-image: url(./images/informatie/recent/recent.png);    
+    background-image: url(./files/images/informatie/recent/recent.png);    
 
 }
 
@@ -900,7 +900,7 @@ footer .block-2-2-1, footer .block-2-2-2 {
 .nieuws-hero {
     width: 100%;
     height: 50vh;
-    background-image: url(./images/informatie/nieuws.jpg);
+    background-image: url(./files/images/informatie/nieuws.jpg);
     background-color: #ff0000b2;
     background-position: center;
     background-repeat: no-repeat;
@@ -960,7 +960,7 @@ footer .block-2-2-1, footer .block-2-2-2 {
 .agenda-hero {
     width: 100%;
     height: 50vh;
-    background-image: url(./images/informatie/agenda.jpg);
+    background-image: url(./files/images/informatie/agenda.jpg);
     background-color: #ff0000b2;
     background-position: center;
     background-repeat: no-repeat;
@@ -1081,7 +1081,7 @@ footer .block-2-2-1, footer .block-2-2-2 {
 .lestijden-hero {
     width: 100%;
     height: 50vh;
-    background-image: url(./images/informatie/lestijden.jpg);
+    background-image: url(./files/images/informatie/lestijden.jpg);
     background-color: #ff0000b2;
     background-position: center;
     background-repeat: no-repeat;
@@ -1217,7 +1217,7 @@ footer .block-2-2-1, footer .block-2-2-2 {
 .regels-hero {
     width: 100%;
     height: 50vh;
-    background-image: url(./images/informatie/huisregels.jpg);
+    background-image: url(./files/images/informatie/huisregels.jpg);
     background-color: #ff0000b2;
     background-position: center;
     background-repeat: no-repeat;
@@ -1284,7 +1284,7 @@ footer .block-2-2-1, footer .block-2-2-2 {
 .protocollen-hero {
     width: 100%;
     height: 50vh;
-    background-image: url(./images/informatie/protocollen.jpg);
+    background-image: url(./files/images/informatie/protocollen.jpg);
     background-color: #ff0000b2;
     background-position: center;
     background-repeat: no-repeat;
@@ -1369,7 +1369,7 @@ footer .block-2-2-1, footer .block-2-2-2 {
 .inschrijven-hero {
     width: 100%;
     height: 50vh;
-    background-image: url(./images/informatie/inschrijven.jpg);
+    background-image: url(./files/images/informatie/inschrijven.jpg);
     background-color: #ff0000b2;
     background-position: center;
     background-repeat: no-repeat;
@@ -1498,7 +1498,7 @@ footer .block-2-2-1, footer .block-2-2-2 {
 .examen-hero {
     width: 100%;
     height: 50vh;
-    background-image: url(./images/informatie/examens.jpg);
+    background-image: url(./files/images/informatie/examens.jpg);
     background-color: #ff0000b2;
     background-position: center;
     background-repeat: no-repeat;
@@ -1619,7 +1619,7 @@ footer .block-2-2-1, footer .block-2-2-2 {
 .recent-hero {
     width: 100%;
     height: 50vh;
-    background-image: url(./images/informatie/recent/recent.png);
+    background-image: url(./files/images/informatie/recent/recent.png);
     background-color: #ff0000b2;
     background-position: center;
     background-repeat: no-repeat;
@@ -1759,7 +1759,7 @@ footer .block-2-2-1, footer .block-2-2-2 {
 .contact-hero {
     width: 100%;
     height: 50vh;
-    background-image: url(./images/contact/contact.jpg);
+    background-image: url(./files/images/contact/contact.jpg);
     background-color: #ff0000b2;
     background-position: center;
     background-repeat: no-repeat;
@@ -1958,7 +1958,7 @@ footer .block-2-2-1, footer .block-2-2-2 {
 .over-ons-hero {
     width: 100%;
     height: 60vh;
-    background-image: url(./images/home/hero-image.png);
+    background-image: url(./files/images/home/hero-image.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2011,7 +2011,7 @@ footer .block-2-2-1, footer .block-2-2-2 {
 .sponsors-hero {
     width: 100%;
     height: 60vh;
-    background-image: url(./images/home/hero-image.png);
+    background-image: url(./files/images/home/hero-image.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

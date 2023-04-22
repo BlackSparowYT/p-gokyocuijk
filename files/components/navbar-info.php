@@ -1,10 +1,10 @@
 <nav>
     <div id="navbar-v1">
         <div class="navbar-v1-sitelogo">
-            <a><img src="../../images/navbar-logo.png"></a>
+            <a><img src="../../files/images/navbar-logo.png"></a>
         </div>
         <div class="navbar-v1-items">
-            <a href="index.php" class="hoverbtn"><h3>Home</h3></a>
+            <a href="../../index.php" class="hoverbtn"><h3>Home</h3></a>
             <div class="dropdown">
                 <a onclick="myFunction3()" class="dropbtn hoverbtn"><h3 class="dropbtn">Informatie</h3></a>
                 <div id="dropdownMenu" class="dropdown-content">
@@ -51,7 +51,7 @@
     
     <div id="navbar-v2">
         <div class="navbar-v2-sitelogo">
-            <a><img src="../../images/navbar-logo.png"></a>
+            <a><img src="../../files/images/navbar-logo.png"></a>
         </div>
         <div class="navbar-v2-items">
             <a onclick="openNav()"><h2>&#9776;</h2></a>
