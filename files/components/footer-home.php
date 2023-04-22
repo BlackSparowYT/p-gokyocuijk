@@ -1,9 +1,7 @@
-<footer>
     <div class="flex-box-1">
         <div class="block-1">
             <img src="./images/footer-logo.png">
-            <h3>Page Version: v1.1</h3>
-            <h3>Site Version: v1.1</h3>
+            <h3>Site Version: v1.5</h3>
         </div>
         <div class="block-2">
             <div class="block-2-1">
@@ -55,4 +53,3 @@
     <div class="block-3">
         <h3>&#169;<script>document.write(new Date().getFullYear())</script> - Gokyo Cuijk <!--| <a href="https://design-atlas.nl" target="_blank">Design Atlas</a>--></h3>
     </div>
-</footer>

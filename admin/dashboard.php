@@ -23,7 +23,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Sono:wght@300;600;800&display=swap" rel="stylesheet">
 
-        <title>Dashboard || Het Oventje</title>
+        <title>Dashboard</title>
         <link rel="stylesheet" href="../styles.css">
 
         <link rel="icon" type="image/x-icon" href="../images/favicon.png">
@@ -39,7 +39,7 @@
 
     <body>
         
-        <?php include("../files/components/header.php"); ?>
+        <?php include("../files/components/navbar.php"); ?>
 
         <main class="dashboard account-pagina">
             <div class="hero">
@@ -48,7 +48,15 @@
                 </div>
             </div>
             <div class="content">
-                
+                <div class="buttons">
+                    <a href="loguit.php">Log uit</a>
+                    <a href="reset-ww.php">Verander Wachtwoord</a>
+                    <a href="reset-mail.php">Verander Email</a>
+                    <a href="reset-naam.php">Verander Naam</a>
+                </div>
+                <div class="buttons">
+                    <a href="admin-pages.php">Pagina's</a>
+                </div>
             </div>
         </main>
 

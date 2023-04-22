@@ -2099,3 +2099,144 @@ footer .block-2-2-1, footer .block-2-2-2 {
     min-height: calc(100% - 100px);
     margin-top: 100px;
 }
+
+
+
+/** Account Pagina || Forms **/
+
+.account-pagina .content-form {
+    min-height: calc(100vh - 100px - 280px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.account-pagina .content-form .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 30%;
+    padding: 50px 0;
+    border-radius: 20px;
+
+    background-color: #212121;
+    color: #fff;
+}
+
+.account-pagina .content-form .form h1 {
+    margin: 5px 0;
+}
+
+.account-pagina .content-form .form input {
+    box-sizing: border-box;
+    
+    height: 25px;
+    padding: 0 3px;
+    margin: 10px 0 20px;
+
+    background-color: #2f2f2f;
+    color: #fff;
+
+    outline: 0;
+    border: 1px solid transparent;
+    border-radius: 5px;
+
+    transition: all .2s;
+}
+
+.account-pagina .content-form .form input:hover {
+    border-bottom: 3px solid #ff0000;
+
+    transition: all .2s;
+}
+
+.account-pagina .content-form .form input:focus-visible {
+    border-bottom: 3px solid #00ff00;
+
+    transition: all .2s;
+}
+
+.account-pagina .content-form .form button {
+    padding: 10px;
+
+    background-color: #ff0000;
+
+    outline: 0;
+    border: 1px solid transparent;
+    border-radius: 5px;
+
+    transition: all .2s;
+}
+
+.account-pagina .content-form .form button:hover {
+    padding: 10px;
+
+    background-color: #ff0000b2;
+
+    cursor: pointer;
+
+    transition: all .2s;
+}
+
+
+
+
+/*** Dashboard ***/
+
+.dashboard {
+    height: calc(100vh - 100px - 280px);
+    margin-top: 100px;
+}
+
+.dashboard .hero {
+    color: #fff;
+
+    height: 20%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard .content {
+    height: 80%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard .content .buttons {
+    width: 50%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.dashboard .content .buttons a {
+    width: 45%;
+    height: 50px;
+    margin: 1%;
+
+    text-align: center;
+    
+    background-color: #212121;
+    color: #ff0000;
+
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all .3s;
+}
+
+.dashboard .content .buttons a:hover {
+    transition: all .3s;
+    transform: scale(1.05);
+}

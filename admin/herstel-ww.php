@@ -91,7 +91,7 @@
                     <h1 class="t1">Wachtwoord Vergeten</h1>
                 </div>
             </div>
-            <div class="content">
+            <div class="content-form content">
                 <div class="forum">
                     <form method="post">
                         <div>

@@ -5,7 +5,7 @@
     $ip = $_SERVER['REMOTE_ADDR'];
     $date = date("Y/m/d H:i:s");
     $comp_name = getenv('COMPUTERNAME');
-    $fdata = "\nDate & Time: ".$date.", IP: ".$ip.", COMP_NAME: ".$comp_name.";";
+    $fdata = "Date & Time: ".$date.", IP: ".$ip.", COMP_NAME: ".$comp_name.";\n";
     fwrite($file,$fdata);
     fclose($file);
 
@@ -98,20 +98,16 @@
         <?php include("../files/components/navbar.php"); ?>
 
         <main class="login account-pagina">
-            <div class="hero">
-                <div class="hero-text">
-                    <h1 class="t1">Login</h1>
-                </div>
-            </div>
-            <div class="content">
-                <div class="forum">
+            <div class="content-form content">
+                <div class="form">
                     <form method="post">
+                        <h1>Login</h1>
                         <div>
-                            <h3>Email</h3>
+                            <h3>Email:</h3>
                             <input type="email" name="email" required>
                         </div>
                         <div>
-                            <h3>Wachtwoord</h3>
+                            <h3>Wachtwoord:</h3>
                             <input type="password" name="password" required>
                         </div>
                         <?php if (isset($error)) : ?>
