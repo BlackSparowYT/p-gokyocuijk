@@ -16,14 +16,14 @@
                     <p>- <a href="../index.php">Home</a></p>
                     <p>- <a href="../informatie/index.php">Informatie</a></p>
                     <p>-- <a href="https://www.facebook.com/gokyocuijk/" target="_blank">Nieuws</a></p>
-                    <p>-- <a href="../informatie/lestijden/index.php">Les Tijden</a></p>
-                    <p>-- <a href="../informatie/agenda/index.php">Agenda</a></p>
-                    <p>-- <a href="../informatie/huisregels/index.php">Huisregels</a></p>
+                    <p>-- <a href="../informatie/lestijden.php">Les Tijden</a></p>
+                    <p>-- <a href="../informatie/agenda.php">Agenda</a></p>
+                    <p>-- <a href="../informatie/huisregels.php">Huisregels</a></p>
                 </div>
                 <div class="block-2-2-2">
-                    <p>-- <a href="../informatie/exameneisen/index.php">Examen Eisen</a></p>
-                    <p>-- <a href="../informatie/inschrijven/index.php">Inschrijven</a></p>
-                    <p>-- <a href="../informatie/recent/index.php">Recent</a></p>
+                    <p>-- <a href="../informatie/examens.php">Examen Eisen</a></p>
+                    <p>-- <a href="../informatie/inschrijven.php">Inschrijven</a></p>
+                    <p>-- <a href="../informatie/recent.php">Recenten Activiteiten</a></p>
                     <p>- <a href="../contact/index.php">Contact</a></p>
                     <p>- <a href="../over-ons/index.php">Over ons</a></p>
                     <p>- <a href="../sponsors/index.php">Sponsors</a></p>
@@ -35,13 +35,13 @@
                     <a href="../index.php">Home</a>
                     <a href="../informatie/index.php">Informatie</a>
                     <a href="https://www.facebook.com/gokyocuijk/" target="_blank">Nieuws</a>
-                    <a href="../informatie/lestijden/index.php">Les Tijden</a>
-                    <a href="../informatie/agenda/index.php">Agenda</a>
-                    <a href="../informatie/huisregels/index.php">Huisregels</a>
+                    <a href="../informatie/lestijden.php">Les Tijden</a>
+                    <a href="../informatie/agenda.php">Agenda</a>
+                    <a href="../informatie/huisregels.php">Huisregels</a>
                 </div>
                 <div class="block-2-2-2">
-                    <a href="../informatie/exameneisen/index.php">Examen Eisen</a>
-                    <a href="../informatie/inschrijven/index.php">Inschrijven</a>
+                    <a href="../informatie/exameneisen.php">Examen Eisen</a>
+                    <a href="../informatie/inschrijven.php">Inschrijven</a>
                     <a href="../contact/index.php">Contact</a>
                     <a href="../over-ons/index.php">Over ons</a>
                     <a href="../sponsors/index.php">Sponsors</a>

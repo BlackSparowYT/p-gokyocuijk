@@ -5,18 +5,21 @@
         </div>
         <div class="navbar-v1-items">
             <a href="index.php" class="hoverbtn"><h3>Home</h3></a>
+            
             <div class="dropdown">
-                <a onclick="myFunction3()" class="dropbtn hoverbtn"><h3 class="dropbtn">Informatie</h3></a>
+                <a onclick="myFunction3()" class="dropbtn hoverbtn">
+                    <h3 class="dropbtn">Informatie</h3>
+                </a>
                 <div id="dropdownMenu" class="dropdown-content">
                     <a href="https://www.facebook.com/gokyocuijk/">Nieuws</a>
-                    <a href="./informatie/lestijden/index.php">Les Tijden</a>
-                    <a href="./informatie/agenda/index.php">Agenda</a>
-                    <a href="./informatie/huisregels/index.php">Huisregels</a>
-                    <a href="./informatie/examens/index.php">Examens</a>
-                    <a href="./informatie/inschrijven/index.php#gokyo">Inschrijven Gokyo</a>
-                    <a href="./informatie/inschrijven/index.php#toernooi">Inschrijven Toernooien</a>
-                    <a href="./informatie/protocollen/index.php">Gedragsregels & Protocollen</a>
-                    <a href="./informatie/recent/index.php">Recent</a>
+                    <a href="./informatie/lestijden.php">Les Tijden</a>
+                    <a href="./informatie/agenda.php">Agenda</a>
+                    <a href="./informatie/huisregels.php">Huisregels</a>
+                    <a href="./informatie/examens.php">Examens</a>
+                    <a href="./informatie/inschrijven.php#gokyo">Inschrijven Gokyo</a>
+                    <a href="./informatie/inschrijven.php#toernooi">Inschrijven Toernooien</a>
+                    <a href="./informatie/protocollen.php">Gedragsregels & Protocollen</a>
+                    <a href="./informatie/recent.php">Recent</a>
                 </div>
             </div>
             <a href="./contact/index.php" class="hoverbtn"><h3>Contact</h3></a>

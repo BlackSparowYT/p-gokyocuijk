@@ -25,7 +25,7 @@
             <div class="recent-hero">
                 <div class="overlay">
                     <div class="hero-text">
-                        <h1>Recent</h1>
+                        <h1>Recenten Activiteiten</h1>
                     </div>
                 </div>
             </div>
