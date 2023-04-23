@@ -77,7 +77,9 @@
     
     <body id="registreer">
         
-        <?php include("../files/components/navbar.php"); ?>
+        <header>
+            <?php include("../files/components/navbar.php"); ?>
+        </header>
 
         <main class="registreer account-pagina">
             <div class="hero">
@@ -91,14 +93,17 @@
                         <div>
                             <h3>Email</h3>
                             <input type="email" name="email" required>
+                            <div class="input-line"></div>
                         </div>
                         <div>
                             <h3>Naam</h3>
                             <input type="text" name="username" required>
+                            <div class="input-line"></div>
                         </div>
                         <div>
                             <h3>Wachtwoord</h3>
                             <input type="password" name="password" required>
+                            <div class="input-line"></div>
                         </div>
                         <?php if (isset($error)) : ?>
                             <div><?php echo $error; ?></div>
@@ -112,7 +117,9 @@
             </div>
         </main>
 
-        <?php include("../files/components/footer.php"); ?>
+        <footer>
+            <?php include("../files/components/footer.php"); ?>
+        </footer>
 
     </body>
 

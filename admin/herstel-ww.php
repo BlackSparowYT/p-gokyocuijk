@@ -83,7 +83,9 @@
     
     <body id="herstel-ww">
     
-        <?php include("../files/components/navbar.php"); ?>
+        <header>
+            <?php include("../files/components/navbar.php"); ?>
+        </header>
 
         <main class="herstel-ww account-pagina">
             <div class="hero">
@@ -121,7 +123,9 @@
             </div>
         </main>
 
-        <?php include("../files/components/footer.php"); ?>
+        <footer>
+            <?php include("../files/components/footer.php"); ?>
+        </footer>
 
     </body>
 </html>

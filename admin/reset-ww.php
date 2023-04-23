@@ -66,7 +66,9 @@
     
     <body id="reset-ww">
     
-        <?php include("../files/components/navbar.php"); ?>
+        <header>
+            <?php include("../files/components/navbar.php"); ?>
+        </header>
 
         <main class="reset-ww account-pagina">
             <div class="hero">
@@ -75,19 +77,22 @@
                 </div>
             </div>
             <div class="content-form content">
-                <div class="forum">
+                <div class="form">
                     <form method="post">
                         <div>
                             <h3>Huidige Wachtwoord</h3>
                             <input type="password" name="old_password" required>
+                        <div class="input-line"></div>
                         </div>
                         <div>
                             <h3>Nieuw Wachtwoord</h3>
                             <input type="password" name="new_password1" required>
+                        <div class="input-line"></div>
                         </div>
                         <div>
                             <h3>Bevestig Nieuw Wachtwoord</h3>
                             <input type="password" name="new_password2" required>
+                        <div class="input-line"></div>
                         </div>
                         <div>
                             <button type="submit" name="reset_password">Verander Wachtwoord</button>
@@ -99,7 +104,9 @@
             </div>
         </main>
 
-        <?php include("../files/components/footer.php"); ?>
+        <footer>
+            <?php include("../files/components/footer.php"); ?>
+        </footer>
 
     </body>
 </html>

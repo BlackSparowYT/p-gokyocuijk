@@ -81,7 +81,9 @@
     
     <body>
         
-        <?php include("../files/components/navbar.php"); ?>
+        <header>
+            <?php include("../files/components/navbar.php"); ?>
+        </header>
 
         <main class="reset-naam account-pagina">
             <div class="hero">
@@ -90,19 +92,22 @@
                 </div>
             </div>
             <div class="content-form content">
-                <div class="forum">
+                <div class="form">
                     <form method="post">
                         <div>
                             <h3>Nieuwe Naam</h3>
                             <input type="text" name="new_username" required>
+                        <div class="input-line"></div>
                         </div>
                         <div>
                             <h3>Bevestig Nieuwe Naam</h3>
                             <input type="text" name="confirm_username" required>
+                        <div class="input-line"></div>
                         </div>
                         <div>
                             <h3>Wachtwoord</h3>
                             <input type="password" name="password" required>
+                        <div class="input-line"></div>
                         </div>
                         <?php if (isset($error)) : ?>
                             <div><?php echo $error; ?></div>
@@ -116,7 +121,9 @@
             </div>
         </main>
 
-        <?php include("../files/components/footer.php"); ?>
+        <footer>
+            <?php include("../files/components/footer.php"); ?>
+        </footer>
 
     </body>
 </html>

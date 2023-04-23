@@ -39,7 +39,9 @@
 
     <body>
         
-        <?php include("../files/components/navbar.php"); ?>
+        <header>
+            <?php include("../files/components/navbar.php"); ?>
+        </header>
 
         <main class="dashboard account-pagina">
             <div class="hero">
@@ -49,18 +51,20 @@
             </div>
             <div class="content">
                 <div class="buttons">
-                    <a href="loguit.php">Log uit</a>
-                    <a href="reset-ww.php">Verander Wachtwoord</a>
-                    <a href="reset-mail.php">Verander Email</a>
-                    <a href="reset-naam.php">Verander Naam</a>
+                    <a href="loguit.php"><h4>Log uit</h4></a>
+                    <a href="reset-ww.php"><h4>Verander Wachtwoord</h4></a>
+                    <a href="reset-mail.php"><h4>Verander Email</h4></a>
+                    <a href="reset-naam.php"><h4>Verander Naam</h4></a>
                 </div>
                 <div class="buttons">
-                    <a href="admin-pages.php">Pagina's</a>
+                    <a href="admin-pages.php"><h4>Pagina's</h4></a>
                 </div>
             </div>
         </main>
 
-        <?php include("../files/components/footer.php"); ?>
+        <footer>
+            <?php include("../files/components/footer.php"); ?>
+        </footer>
 
     </body>
 

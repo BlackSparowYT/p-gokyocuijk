@@ -80,7 +80,9 @@
     
     <body id="reset-mail">
     
-        <?php include("../files/components/navbar.php"); ?>
+        <header>
+            <?php include("../files/components/navbar.php"); ?>
+        </header>
 
         <main class="reset-mail account-pagina">
             <div class="hero">
@@ -89,19 +91,22 @@
                 </div>
             </div>
             <div class="content-form content">
-                <div class="forum">
+                <div class="form">
                     <form method="post">
                         <div>
                             <h3>Nieuwe Email</h3>
                             <input type="email" name="new_email" required>
+                            <div class="input-line"></div>
                         </div>
                         <div>
                             <h3>Bevestig Nieuwe Email</h3>
                             <input type="email" name="confirm_email" required>
+                            <div class="input-line"></div>
                         </div>
                         <div>
                             <h3>Wachtwoord</h3>
                             <input type="password" name="password" required>
+                            <div class="input-line"></div>
                         </div>
                         <?php if (isset($error)) : ?>
                             <div><p class="errors" style="color: darkred;"><?php echo $error; ?></p></div>
@@ -115,7 +120,9 @@
             </div>
         </main>
 
-        <?php include("../files/components/footer.php"); ?>
+        <footer>
+            <?php include("../files/components/footer.php"); ?>
+        </footer>
 
     </body>
 </html>

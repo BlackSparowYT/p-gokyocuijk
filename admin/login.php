@@ -95,7 +95,9 @@
 
     <body id="login">
         
-        <?php include("../files/components/navbar.php"); ?>
+        <header>
+            <?php include("../files/components/navbar.php"); ?>
+        </header>
 
         <main class="login account-pagina">
             <div class="content-form content">
@@ -105,14 +107,16 @@
                         <div>
                             <h3>Email:</h3>
                             <input type="email" name="email" required>
+                            <div class="input-line"></div>
                         </div>
                         <div>
                             <h3>Wachtwoord:</h3>
                             <input type="password" name="password" required>
+                            <div class="input-line"></div>
                         </div>
                         <?php if (isset($error)) : ?>
                             <div>
-                                <p class="errors" style="color: darkred;"><?php echo $error; ?></p>
+                                <p class="errors" style="color: red;"><?php echo $error; ?></p>
                             </div>
                         <?php endif; ?>
                         <div>
@@ -123,7 +127,9 @@
             </div>
         </main>
 
-        <?php include("../files/components/footer.php"); ?>
+        <footer>
+            <?php include("../files/components/footer.php"); ?>
+        </footer>
 
     </body>
 

@@ -38,13 +38,17 @@
     
     <body id="loguit">
 
-        <?php include("../files/components/navbar.php"); ?>
+        <header>
+            <?php include("../files/components/navbar.php"); ?>
+        </header>
         
         <main class="loguit account-pagina">
             <h1>Je word uitgelogt!</h1>
         </main>
 
-        <?php include("../files/components/footer.php"); ?>
+        <footer>
+            <?php include("../files/components/footer.php"); ?>
+        </footer>
 
     </body>
 </html>

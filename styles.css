@@ -2117,7 +2117,7 @@ footer .block-2-2-1, footer .block-2-2-2 {
     justify-content: center;
     align-items: center;
     
-    width: 30%;
+    min-width: 30%;
     padding: 50px 0;
     border-radius: 20px;
 
@@ -2127,14 +2127,39 @@ footer .block-2-2-1, footer .block-2-2-2 {
 
 .account-pagina .content-form .form h1 {
     margin: 5px 0;
+
+    text-align: center;
+}
+
+.account-pagina .content-form .form div:not(.flexbox, .input-line) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    min-width: 300px;
+}
+
+.account-pagina .content-form .form .flexbox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.account-pagina .content-form .form div h3 {
+    width: 300px;
+    margin: 20px 0 10px;
+
+    text-align: center;
 }
 
 .account-pagina .content-form .form input {
     box-sizing: border-box;
     
     height: 25px;
+    width: 200px;
     padding: 0 3px;
-    margin: 10px 0 20px;
 
     background-color: #2f2f2f;
     color: #fff;
@@ -2142,24 +2167,62 @@ footer .block-2-2-1, footer .block-2-2-2 {
     outline: 0;
     border: 1px solid transparent;
     border-radius: 5px;
-
-    transition: all .2s;
 }
 
-.account-pagina .content-form .form input:hover {
-    border-bottom: 3px solid #ff0000;
+.account-pagina .content-form .form div:has(textarea) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 
-    transition: all .2s;
+    overflow-x: scroll;
 }
 
-.account-pagina .content-form .form input:focus-visible {
-    border-bottom: 3px solid #00ff00;
+.account-pagina .content-form .form textarea {
+    box-sizing: border-box;
+    
+    height: 50px;
+    width: 200px;
+    max-width: 500px;
+    padding: 0 3px;
 
-    transition: all .2s;
+    background-color: #2f2f2f;
+    color: #fff;
+
+    outline: 0;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+.account-pagina .content-form .form div:not(:has(.input-cb)) .input-line {
+    width: 200px;
+    height: 3px;
+    margin-bottom: 20px;
+    
+    background-color: transparent;
+
+    border-radius: 5px;
+
+    transition: all .3s;
+}
+
+.account-pagina .content-form .form div input:hover + .input-line {
+    background-color: #ff0000;
+    transition: all .3s;
+}
+
+.account-pagina .content-form .form div input:focus-visible + .input-line {
+    background-color: #00ff00;
+    transition: all .3s;
+}
+
+.account-pagina .content-form .form div input:hover:disabled + .input-line {
+    background-color: #ff000077;
+    transition: all .3s;
 }
 
 .account-pagina .content-form .form button {
     padding: 10px;
+    margin-top: 20px;
 
     background-color: #ff0000;
 
@@ -2167,7 +2230,7 @@ footer .block-2-2-1, footer .block-2-2-2 {
     border: 1px solid transparent;
     border-radius: 5px;
 
-    transition: all .2s;
+    transition: all .3s;
 }
 
 .account-pagina .content-form .form button:hover {
@@ -2180,6 +2243,38 @@ footer .block-2-2-1, footer .block-2-2-2 {
     transition: all .2s;
 }
 
+.account-pagina .content-form .form .errors {
+    margin: 10px 0 0;
+    max-width: 200px;
+
+    text-align: center;
+}
+
+.account-pagina .content-form .form .help-return-btns {
+    margin-top: 10px;
+
+    text-align: center;
+}
+
+
+
+
+
+/*** Account Pagina's Misc ***/
+
+.account-pagina .hero {
+    color: #fff;
+
+    height: 20%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.account-pagina .hero h1 {
+    margin: 20px 0;
+}
 
 
 
@@ -2188,16 +2283,6 @@ footer .block-2-2-1, footer .block-2-2-2 {
 .dashboard {
     height: calc(100vh - 100px - 280px);
     margin-top: 100px;
-}
-
-.dashboard .hero {
-    color: #fff;
-
-    height: 20%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .dashboard .content {
@@ -2219,7 +2304,7 @@ footer .block-2-2-1, footer .block-2-2-2 {
 
 .dashboard .content .buttons a {
     width: 45%;
-    height: 50px;
+    height: 100px;
     margin: 1%;
 
     text-align: center;
@@ -2229,14 +2314,144 @@ footer .block-2-2-1, footer .block-2-2-2 {
 
     border-radius: 10px;
 
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    transition: all .3s;
+    transition: all .2s;
 }
 
 .dashboard .content .buttons a:hover {
-    transition: all .3s;
-    transform: scale(1.05);
+    transition: all .2s;
+    transform: scale(1.02);
+
+    color: #ffffff;
+
+    border-bottom: 5px solid #ff0000;
+}
+
+.dashboard .content .buttons a h4 {
+    margin-bottom: 5px;
+
+    transition: all .2s;
+}
+
+.dashboard .content .buttons a:hover h4 {
+    margin-bottom: 0;
+
+    transition: all .2s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*** Admin Page | Content ***/
+.admin-paginas .pages-content {
+    margin: 2.5vh 5% 0;
+    width: 90%;
+    height: calc(75vh - 80px);
+    background-color: var(--beige);
+    color: var(--black);
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.admin-paginas .pages-content .table-content {
+    max-width: 90%;
+    height: 95%;
+
+    color: #fff;
+}
+
+.admin-paginas .pages-content .table-content .table-block > .admin-table {
+    width: fit-content;
+    max-width: 100%;
+    height: 95%;
+    padding: 0 100px;
+    overflow-y: scroll;
+}
+
+.admin-paginas .pages-content .table-block {
+    height: 100%;
+}
+
+.admin-paginas .pages-content .table-block > h3 {
+    color: var(--black);
+    width: 40%;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.admin-paginas .pages-content .table-block > #btn-back {
+    color: var(--white);
+    min-width: fit-content;
+    text-align: right;
+    margin-top: 10px;
+    margin-right: 15px;
+    float: right;
+}
+
+.admin-paginas .pages-content .table-block > #btn-add {
+    color: var(--white);
+    width: calc(25% - 15px);
+    min-width: fit-content;
+    display: inline-block;
+    text-align: right;
+    margin-top: 10px;
+    margin-right: 15px;
+}
+
+
+.admin-paginas .pages-content .table-content table {
+    margin-top: 10px;
+    overflow: scroll;
+}
+
+.admin-paginas .pages-content .table-content p {
+    color: var(--black);
+}
+
+.admin-paginas .pages-content .table-content tr {
+    height: min-content;
+    width: fit-content;
+}
+
+.admin-paginas .pages-content .table-content th {
+    text-align: left;
+    padding: 10px;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.admin-paginas .pages-content .table-content td {
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-align: center;
+    width: fit-content;
+}
+
+
+.admin-paginas .pages-content .table-content tr:nth-child(even) {
+    background-color: #2f2f2f;
+    border: 5px;
+}
+
+.admin-paginas .pages-content .table-content tr:nth-child(odd) {
+    background-color: #212121;
+    border: 5px;
 }
