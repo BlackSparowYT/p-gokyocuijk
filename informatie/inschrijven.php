@@ -6,8 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Your description goes here">
         <title>Inschrijven | Gokyo Cuijk</title>
-        <link rel="stylesheet" href="../../styles.css">
-        <link rel="icon" type="image/x-icon" href="../../files/images/favicon.png">
+        <link rel="stylesheet" href="../styles.css">
+        <link rel="icon" type="image/x-icon" href="../files/images/favicon.png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap" rel="stylesheet">
@@ -19,7 +19,7 @@
     <body id="inschrijven">
 
         <header>
-            <?php include("../../files/components/navbar-info.php"); ?>
+            <?php include("../files/components/navbar.php"); ?>
         </header>
         
         <main class="inschrijven">
@@ -123,7 +123,7 @@
         </main>
 
         <footer>
-            <?php include("../../files/components/footer-info.php"); ?>
+            <?php include("../files/components/footer.php"); ?>
         </footer>
         
     </body>

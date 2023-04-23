@@ -5,8 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Recent | Gokyo Cuijk</title>
-        <link rel="stylesheet" href="../../styles.css">
-        <link rel="icon" type="image/x-icon" href="../../files/images/favicon.png">
+        <link rel="stylesheet" href="../styles.css">
+        <link rel="icon" type="image/x-icon" href="../files/images/favicon.png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap" rel="stylesheet">
@@ -18,7 +18,7 @@
     <body id="recent">
         
         <header>
-            <?php include("../../files/components/navbar-info.php"); ?>
+            <?php include("../files/components/navbar.php"); ?>
         </header>
 
         <main class="recent">
@@ -37,32 +37,32 @@
                     <div class="container">
                         <div class="mySlides">
                             <div class="numbertext">1 / 6</div>
-                            <img class="slidesImg" src="../../files/images/informatie/recent/heumen_06-11-2022/DSC_0234.jpg">
+                            <img class="slidesImg" src="../files/images/informatie/recent/heumen_06-11-2022/DSC_0234.jpg">
                         </div>
                         
                         <div class="mySlides">
                             <div class="numbertext">2 / 6</div>
-                            <img class="slidesImg" src="../../files/images/informatie/recent/heumen_06-11-2022/DSC_0230.jpg">
+                            <img class="slidesImg" src="../files/images/informatie/recent/heumen_06-11-2022/DSC_0230.jpg">
                         </div>
                         
                         <div class="mySlides">
                             <div class="numbertext">3 / 6</div>
-                            <img class="slidesImg" src="../../files/images/informatie/recent/heumen_06-11-2022/DSC_0228.jpg">
+                            <img class="slidesImg" src="../files/images/informatie/recent/heumen_06-11-2022/DSC_0228.jpg">
                         </div>
                             
                         <div class="mySlides">
                             <div class="numbertext">4 / 6</div>
-                            <img class="slidesImg" src="../../files/images/informatie/recent/heumen_06-11-2022/DSC_0234.jpg">
+                            <img class="slidesImg" src="../files/images/informatie/recent/heumen_06-11-2022/DSC_0234.jpg">
                         </div>
                         
                         <div class="mySlides">
                             <div class="numbertext">5 / 6</div>
-                            <img class="slidesImg" src="../../files/images/informatie/recent/heumen_06-11-2022/DSC_0234.jpg">
+                            <img class="slidesImg" src="../files/images/informatie/recent/heumen_06-11-2022/DSC_0234.jpg">
                         </div>
                             
                         <div class="mySlides">
                             <div class="numbertext">6 / 6</div>
-                            <img class="slidesImg" src="../../files/images/informatie/recent/heumen_06-11-2022/DSC_0234.jpg">
+                            <img class="slidesImg" src="../files/images/informatie/recent/heumen_06-11-2022/DSC_0234.jpg">
                         </div>
                             
                         <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -71,22 +71,22 @@
 
                         <div class="row">
                             <div class="column">
-                            <img class="demo cursor" src="../../files/images/informatie/recent/heumen_06-11-2022/DSC_0234.jpg" style="width:100%" onclick="currentSlide(1)">
+                            <img class="demo cursor" src="../files/images/informatie/recent/heumen_06-11-2022/DSC_0234.jpg" style="width:100%" onclick="currentSlide(1)">
                             </div>
                             <div class="column">
-                            <img class="demo cursor" src="../../files/images/informatie/recent/heumen_06-11-2022/DSC_0234.jpg" style="width:100%" onclick="currentSlide(2)">
+                            <img class="demo cursor" src="../files/images/informatie/recent/heumen_06-11-2022/DSC_0234.jpg" style="width:100%" onclick="currentSlide(2)">
                             </div>
                             <div class="column">
-                            <img class="demo cursor" src="../../files/images/informatie/recent/heumen_06-11-2022/DSC_0234.jpg" style="width:100%" onclick="currentSlide(3)">
+                            <img class="demo cursor" src="../files/images/informatie/recent/heumen_06-11-2022/DSC_0234.jpg" style="width:100%" onclick="currentSlide(3)">
                             </div>
                             <div class="column">
-                            <img class="demo cursor" src="../../files/images/informatie/recent/heumen_06-11-2022/DSC_0234.jpg" style="width:100%" onclick="currentSlide(4)">
+                            <img class="demo cursor" src="../files/images/informatie/recent/heumen_06-11-2022/DSC_0234.jpg" style="width:100%" onclick="currentSlide(4)">
                             </div>
                             <div class="column">
-                            <img class="demo cursor" src="../../files/images/informatie/recent/heumen_06-11-2022/DSC_0234.jpg" style="width:100%" onclick="currentSlide(5)">
+                            <img class="demo cursor" src="../files/images/informatie/recent/heumen_06-11-2022/DSC_0234.jpg" style="width:100%" onclick="currentSlide(5)">
                             </div>    
                             <div class="column">
-                            <img class="demo cursor" src="../../files/images/informatie/recent/heumen_06-11-2022/DSC_0234.jpg" style="width:100%" onclick="currentSlide(6)">
+                            <img class="demo cursor" src="../files/images/informatie/recent/heumen_06-11-2022/DSC_0234.jpg" style="width:100%" onclick="currentSlide(6)">
                             </div>
                         </div>
                     </div>
@@ -126,7 +126,7 @@
         </main>
 
         <footer>
-            <?php include("../../files/components/footer-info.php"); ?>
+            <?php include("../files/components/footer.php"); ?>
         </footer>
 
     </body>
