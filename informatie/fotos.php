@@ -30,7 +30,8 @@
                 </div>
             </div>
             <div class="main-block">
-                <h2>Bekijk onze fotos op onze google drive!</h2>
+                <h2>Nieuwschierig naar onze foto's?</h2>
+                <h3>Klik de link hieronder en bekijk ze op google drive!</h3>
                 <a href="https://drive.google.com/drive/folders/1yZinBMsLsF5wPzf4-a49jFI1fG4cRsvU?usp=share_link" target="_blank"><img src="../files/images/informatie/recent/link.png"></a>
             </div>
         </main>
