@@ -1422,6 +1422,9 @@ footer .block-2-2-1, footer .block-2-2-2 {
 }
 
 .inschrijven .block-MT {
+    min-width: 1px !important;
+    max-width: none !important;
+    width: 100%;
     min-height: fit-content;
     color: #fff;   
     text-align: center;
@@ -1608,10 +1611,6 @@ footer .block-2-2-1, footer .block-2-2-2 {
 
 /*** Recent Page ***/
 
-.recent {
-    height: calc(100vh - 230px);
-}
-
 
 
 /* Recent Hero */
@@ -1654,98 +1653,28 @@ footer .block-2-2-1, footer .block-2-2-2 {
 }
 
 
-
-/* Recent Slideshow */
-
-.recent img {
-    vertical-align: middle;
-}
-
-.recent .slidesImg {
+.recent .main-block {
     width: 100%;
+    min-height: 400px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
 }
 
-/* Position the image container (needed to position the left and right arrows) */
-.recent .container {
-    position: relative;
-    width: 50%;
-    margin-left: 25%;
+.recent .main-block img {
+    margin-top: 20px;
+    height: 500px;
+    border-radius: 20px;
 }
 
-/* Hide the images by default */
-.recent .mySlides {
-    display: none;
+.recent .main-block a:hover {
+    transform: scale(1.01);
+    opacity: 0.9;
 }
 
-/* Add a pointer when hovering over the thumbnail images */
-.recent .cursor {
-    cursor: pointer;
-}
-
-/* Next & previous buttons */
-.recent .prev,
-.recent .next {
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.recent .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.recent .prev:hover,
-.recent .next:hover {
-    background-color: #2f2f2f;
-}
-
-/* Number text (1/3 etc) */
-.recent .numbertext {
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-
-/* Container for image text */
-.recent .caption-container {
-    text-align: center;
-    background-color: #222;
-    padding: 2px 16px;
-}
-
-.recent .row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Six columns side by side */
-.recent .column {
-    float: left;
-    width: 16.66%;
-}
-
-/* Add a transparency effect for thumnbail images */
-.recent .demo {
-    opacity: 0.6;
-}
-
-.recent .active,
-.recent .demo:hover {
-    opacity: 1;
-}
 
 
 
@@ -1802,6 +1731,10 @@ footer .block-2-2-1, footer .block-2-2-2 {
     margin-left: 30px;
 }
 
+.contact .block-1 a {
+    text-decoration: underline;
+}
+
 .contact .block-1 ul {
     margin-top: 10px;
     margin-left: 30px;
@@ -1826,6 +1759,7 @@ footer .block-2-2-1, footer .block-2-2-2 {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+
 .contact .block-1 #locatie-text {
     margin-top: 10px;
     margin-left: 30px;
@@ -1870,12 +1804,16 @@ footer .block-2-2-1, footer .block-2-2-2 {
     align-items: center;
 }
 
+.contact .social-links .social-links-block:hover {
+    transform: scale(0.98);
+}
+
 .mapouter {
     position: relative;
     height: 500px;
     width: 90%;
     margin-top: 30px;
-    margin-left: 5%;
+    margin-left: 30px;
     border-radius: 10px;
 }
 

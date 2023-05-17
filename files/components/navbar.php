@@ -16,7 +16,7 @@
                     <a href="../informatie/inschrijven.php#gokyo">Inschrijven Gokyo</a>
                     <a href="../informatie/inschrijven.php#toernooi">Inschrijven Toernooien</a>
                     <a href="../informatie/protocollen.php">Gedragsregels & Protocollen</a>
-                    <a href="../informatie/recent.php">Recent</a>
+                    <a href="../informatie/fotos.php">Foto's</a>
                 </div>
             </div>
             <a href="../contact/index.php" class="hoverbtn"><h3>Contact</h3></a>

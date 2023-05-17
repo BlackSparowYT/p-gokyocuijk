@@ -1,9 +1,10 @@
 *.zip
 *.NEF
 *.DS_Store
-
-config.php
+*config.php
 iplog.txt
+dont-upload/*
+*dont-upload.*
 
 images/informatie/recent/
 !images/informatie/recent/recent.png

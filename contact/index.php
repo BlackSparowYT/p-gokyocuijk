@@ -39,35 +39,39 @@
                             <li><p><u>Frank van Kaathoven</u>:</p></li>
                             <li><p>> Functie: Voorzitter Gokyo Cuijk & Judoleraar woensdag.</p></li>
                             <li><p>> Telefoon: vraag hier naar in de les.</p></li>
-                            <li><p>> Email: voorzitter@gokyo.nl</p></li>
+                            <li><p>> Email: <a href="mailto:voorzitter@gokyo.nl">voorzitter@gokyo.nl</a></p></li>
                             <li><p><br></p></li>
                             <li><p><br></p></li>
                             <li><p><u>Remko Jansen</u>:</p></li>
                             <li><p>> Functie: Judoleraar maandag.</p></li>
-                            <li><p>> Telefoon: (+31) 6 23356208</p></li>
+                            <li><p>> Telefoon: (+31) 06 23356208</p></li>
                             <li><p>> Email: Graag appen i.p.v. mailen</p></li>
                             <li><p><br></p></li>
                             <li><p><br></p></li>
                             <li><p><u>Gijs van Kaathoven</u>:</p></li>
                             <li><p>> Functie: Judoleraar woensdag.</p></li>
-                            <li><p>> Telefoon: (+31) 6 23820034</p></li>
-                            <li><p>> Email: Graag appen i.p.v. mailen</p></li>
+                            <li><p>> Telefoon: (+31) 06 23820034</p></li>
+                            <li><p>> Email: <a href="mailto:administratie@gokyo.nl">administratie@gokyo.nl</a></p></li>
                             <li><p><br></p></li>
                             <li><p><br></p></li>
-                            <li id="locatie-link"><p><u>Andre Nijnatten</u>:</p></li>
-                            <li><p>> Funcite: Penning Meester & Judoleraar maandag.</p></li>
-                            <li><p>> Telefoon: (+31) 6 41855052</p></li>
-                            <li><p>> Email: Graag appen i.p.v. mailen</p></li>
+                            <li><p><u>Andre Nijnatten</u>:</p></li>
+                            <li><p>> Functie: Penning Meester & Judoleraar maandag.</p></li>
+                            <li><p>> Telefoon: (+31) 06 41855052</p></li>
+                            <li><p>> Email: <a href="mailto:penningmeester@gokyo.nl">penningmeester@gokyo.nl</a></p></li>
+                            <li><p><br></p></li>
+                            <li><p><br></p></li>
+                            <li id="locatie-link"><p><u>Vertrouwens Persoon</u>:</p></li>
+                            <li><p>> Wil je in contact komen met ons vertrouwens persoon? Gebruik dan het mailadres hieronder.</p></li>
+                            <li><p>> Email: <a href="mailto:vertrouwenspersoon@gokyo.nl">vertrouwenspersoon@gokyo.nl</a></p></li>
                         </ul>
                         <br>
                         <br>
                         <br>
                         <h4>Onze locatie:</h4>
-                        <p id="locatie-text">Wij gebruiken de dojo in het gebouw van Sport Centrum Laco om onze lessen in te doen.</p>
+                        <p id="locatie-text">Wij gebruiken de dojo in het gebouw van Sport Centrum Laco om onze lessen in te houden.</p>
                         <div class="mapouter">
                             <div class="gmap_canvas">
                                 <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=Laco%20sportcentrum%20Cuijk&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                            
                             </div>
                         </div>
                     </div>

@@ -84,10 +84,10 @@
                             </div>
                         </div>
                     </a>
-                    <a href="./recent.php">
+                    <a href="./fotos.php">
                         <div class="block block9">
                             <div class="overlay">
-                                <h3>Recent</h3>
+                                <h3>Foto's</h3>
                             </div>
                         </div>
                     </a>
