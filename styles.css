@@ -2137,9 +2137,11 @@ footer .block-2-2-1, footer .block-2-2-2 {
     box-sizing: border-box;
     
     height: 50px;
-    width: 200px;
-    max-width: 500px;
+    width: 250px;
+    max-width: 700px;
+    max-height: min(500px, fit-content);
     padding: 0 3px;
+    margin-left: 10px;
 
     background-color: #2f2f2f;
     color: #fff;
