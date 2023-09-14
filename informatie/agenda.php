@@ -35,7 +35,13 @@
                         <h3>Januari</h3><h3 class="jaartal">&nbsp;<script>document.write(new Date().getFullYear())</script></h3>
                     </div>
                     <p>
-                        n.v.t.
+                        <i>Kerstvakantie: </i>
+                        <br>
+                        24 december &nbsp;<script>document.write(new Date().getFullYear())</script> 
+                        <br>
+                        t/m 
+                        <br>
+                        07 januari &nbsp;<script>document.write(new Date().getFullYear()+1)</script>
                     </p>
                 </div>
                 <div class="block">
@@ -45,7 +51,7 @@
                     <p>
                         <i>Voorjaarsvakantie:</i>
                         <br>
-                        n.v.t.
+                        10 februari t/m 18 februari
                     </p>
                 </div>
                 <div class="block">
@@ -53,9 +59,11 @@
                         <h3>Maart</h3><h3 class="jaartal">&nbsp;<script>document.write(new Date().getFullYear())</script></h3>
                     </div>
                     <p>
-                        <i>Jaarvergadering: </i>
-                        <br>
-                        9 maart
+                        <div style="display: none;">
+                            <i>Jaarvergadering: </i>
+                            <br>
+                            9 maart
+                        </div>
                     </p>
                 </div>
                 <div class="block">
@@ -63,12 +71,12 @@
                         <h3>April</h3><h3 class="jaartal">&nbsp;<script>document.write(new Date().getFullYear())</script></h3>
                     </div>
                     <p>
-                        <i>clubkampioenschappen: </i> 9 april
+                        <i>Pasen:</i> 01 april
                         <br>
                         <br>
                         <i>Meivakantie: </i>
                         <br>
-                        24 april t/m 5 mei
+                        27 april t/m 05 mei
                     </p>
                 </div>
                 <div class="block">
@@ -78,7 +86,10 @@
                     <p>
                         <i>Meivakantie</i>
                         <br>
-                        24 april t/m 5 mei
+                        27 april t/m 5 mei
+                        <br>
+                        <br>
+                        <i>Pinksteren:</i> 20 mei
                     </p>
                 </div>
                 <div class="block">
@@ -94,14 +105,9 @@
                         <h3>Juli</h3><h3 class="jaartal">&nbsp;<script>document.write(new Date().getFullYear())</script></h3>
                     </div>
                     <p>
-                        <i>Examens: </i>
-                        <br>
-                        2 juli (<a href="../examens/index.php">lees meer</a>)
-                        <br>
-                        <br>
                         <i>Zomervakantie: </i>
                         <br>
-                        10 juli t/m 25 augustus
+                        06 juli t/m 18 augustus
                     </p>
                 </div>
                 <div class="block">
@@ -111,7 +117,7 @@
                     <p>
                         <i>Zomervakantie: </i>
                         <br>
-                        10 juli t/m 25 augustus
+                        06 juli t/m 18 augustus
                     </p>
                 </div>
                 <div class="block">
@@ -129,7 +135,9 @@
                     <p>
                         <i>Herfstvakantie: </i>
                         <br>
-                        Niet bekent
+                        <div>
+                            14 oktober t/m 22 oktober
+                        </div>
                     </p>
                 </div>
                 <div class="block">
@@ -147,14 +155,11 @@
                     <p>
                         <i>Kerstvakantie: </i>
                         <br>
-                        Niet bekent
-                        <div style="display: none;">
-                            25 december &nbsp;<script>document.write(new Date().getFullYear())</script> 
-                            <br>
-                            t/m 
-                            <br>
-                            08 januari &nbsp;<script>document.write(new Date().getFullYear()+1)</script>
-                        </div>
+                        24 december &nbsp;<script>document.write(new Date().getFullYear())</script> 
+                        <br>
+                        t/m 
+                        <br>
+                        07 januari &nbsp;<script>document.write(new Date().getFullYear()+1)</script>
                     </p>
                 </div>
             </div>
