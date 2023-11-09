@@ -32,7 +32,7 @@
             <div class="flex-box">
                 <div class="block">
                     <div class="jaartalblock">
-                        <h3>Januari</h3><h3 class="jaartal">&nbsp;<script>document.write(new Date().getFullYear())</script></h3>
+                        <h3>Januari</h3>
                     </div>
                     <p>
                         <i>Kerstvakantie: </i>
@@ -46,7 +46,7 @@
                 </div>
                 <div class="block">
                     <div class="jaartalblock">
-                        <h3>Februari</h3><h3 class="jaartal">&nbsp;<script>document.write(new Date().getFullYear())</script></h3>
+                        <h3>Februari</h3>
                     </div>
                     <p>
                         <i>Voorjaarsvakantie:</i>
@@ -56,19 +56,19 @@
                 </div>
                 <div class="block">
                     <div class="jaartalblock">
-                        <h3>Maart</h3><h3 class="jaartal">&nbsp;<script>document.write(new Date().getFullYear())</script></h3>
+                        <h3>Maart</h3>
                     </div>
                     <p>
                         <div style="display: none;">
                             <i>Jaarvergadering: </i>
                             <br>
-                            9 maart
+                            7 maart
                         </div>
                     </p>
                 </div>
                 <div class="block">
                     <div class="jaartalblock">
-                        <h3>April</h3><h3 class="jaartal">&nbsp;<script>document.write(new Date().getFullYear())</script></h3>
+                        <h3>April</h3>
                     </div>
                     <p>
                         <i>Pasen:</i> 01 april
@@ -81,20 +81,52 @@
                 </div>
                 <div class="block">
                     <div class="jaartalblock">
-                        <h3>Mei</h3><h3 class="jaartal">&nbsp;<script>document.write(new Date().getFullYear())</script></h3>
+                        <h3>Mei</h3>
                     </div>
                     <p>
+                        <i>Pinksteren:</i> 20 mei
+                        <br>
                         <i>Meivakantie</i>
                         <br>
                         27 april t/m 5 mei
                         <br>
-                        <br>
-                        <i>Pinksteren:</i> 20 mei
                     </p>
                 </div>
                 <div class="block">
                     <div class="jaartalblock">
-                        <h3>Juni</h3><h3 class="jaartal">&nbsp;<script>document.write(new Date().getFullYear())</script></h3>
+                        <h3>Juni</h3>
+                    </div>
+                    <p>
+                        <i>Cuijk Keigoed:</i> 9 juni
+                        <br>
+                        <i>ouder-kind judo:</i> 10 & 12 juni 2024
+                        <br>
+                        <i>band- en slipexamens:</i> 17 & 19 juni
+                    </p>
+                </div>
+                <div class="block">
+                    <div class="jaartalblock">
+                        <h3>Juli</h3>
+                    </div>
+                    <p>
+                        <i>Zomervakantie: </i>
+                        <br>
+                        08 juli t/m 25 augustus
+                    </p>
+                </div>
+                <div class="block">
+                    <div class="jaartalblock">
+                        <h3>Augustus</h3>
+                    </div>
+                    <p>
+                        <i>Zomervakantie: </i>
+                        <br>
+                        08 juli t/m 25 augustus
+                    </p>
+                </div>
+                <div class="block">
+                    <div class="jaartalblock">
+                        <h3>September</h3>
                     </div>
                     <p>
                         n.v.t.
@@ -102,35 +134,7 @@
                 </div>
                 <div class="block">
                     <div class="jaartalblock">
-                        <h3>Juli</h3><h3 class="jaartal">&nbsp;<script>document.write(new Date().getFullYear())</script></h3>
-                    </div>
-                    <p>
-                        <i>Zomervakantie: </i>
-                        <br>
-                        06 juli t/m 18 augustus
-                    </p>
-                </div>
-                <div class="block">
-                    <div class="jaartalblock">
-                        <h3>Augustus</h3><h3 class="jaartal">&nbsp;<script>document.write(new Date().getFullYear())</script></h3>
-                    </div>
-                    <p>
-                        <i>Zomervakantie: </i>
-                        <br>
-                        06 juli t/m 18 augustus
-                    </p>
-                </div>
-                <div class="block">
-                    <div class="jaartalblock">
-                        <h3>September</h3><h3 class="jaartal">&nbsp;<script>document.write(new Date().getFullYear())</script></h3>
-                    </div>
-                    <p>
-                        n.v.t.
-                    </p>
-                </div>
-                <div class="block">
-                    <div class="jaartalblock">
-                        <h3>Oktober</h3><h3 class="jaartal">&nbsp;<script>document.write(new Date().getFullYear())</script></h3>
+                        <h3>Oktober</h3>
                     </div>
                     <p>
                         <i>Herfstvakantie: </i>
@@ -142,7 +146,7 @@
                 </div>
                 <div class="block">
                     <div class="jaartalblock">
-                        <h3>November</h3><h3 class="jaartal">&nbsp;<script>document.write(new Date().getFullYear())</script></h3>
+                        <h3>November</h3>
                     </div>
                     <p>
                         n.v.t.
@@ -150,9 +154,11 @@
                 </div>
                 <div class="block">
                     <div class="jaartalblock">
-                        <h3>December</h3><h3 class="jaartal">&nbsp;<script>document.write(new Date().getFullYear())</script></h3>
+                        <h3>December</h3>
                     </div>        
                     <p>
+                        <i>Examens:</i> 18 & 20 december
+                        <br>
                         <i>Kerstvakantie: </i>
                         <br>
                         24 december &nbsp;<script>document.write(new Date().getFullYear())</script> 
@@ -164,6 +170,7 @@
                 </div>
             </div>
         </main>
+
 
         <footer>
             <?php include("../files/components/footer.php"); ?>
