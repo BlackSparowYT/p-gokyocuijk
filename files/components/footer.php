@@ -7,7 +7,7 @@
             <div class="block-2-1">
                 <h3>Over deze site:</h3>
                 <p>
-                    Deze site is gemaakt voor de vereniging Gokyo Cuijk, over Gokyo Cuijk kun je meer vinden op onze <a href="./over-ons/index.php">over ons</a> pagina.
+                    Deze site is gemaakt voor de vereniging Gokyo Cuijk, over Gokyo Cuijk kun je meer vinden op onze <a href="../over-ons/index.php">over ons</a> pagina.
                 </p>
             </div>
             <div class="block-2-2-v1">
