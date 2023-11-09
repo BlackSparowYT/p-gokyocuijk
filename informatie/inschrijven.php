@@ -1,3 +1,13 @@
+<?php
+
+    $page['name'] = "inschrijven";
+    $page['categorie'] = "informatie";
+    $page['path_lvl'] = 2;
+    $page['sidebar'] = false;
+    require_once("../files/config.php");
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -5,22 +15,16 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Your description goes here">
-        <title>Inschrijven | Gokyo Cuijk</title>
-        <link rel="stylesheet" href="../styles.css">
-        <link rel="icon" type="image/x-icon" href="../files/images/favicon.png">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+
+        <?= get_page_title() ?>
+        <?php echo '<link rel="stylesheet" href="' . $path . 'files/styles/core.css">' ?>
+        <?php echo '<link rel="icon" type="image/x-icon" href="' . $path . 'files/logos/favicon.png">' ?>
     </head>
 
     <body id="inschrijven">
 
-        <header>
-            <?php include("../files/components/navbar.php"); ?>
-        </header>
+        <?php include($path.'files/components/header.php'); ?>
         
         <main class="inschrijven">
             <div class="inschrijven-hero">

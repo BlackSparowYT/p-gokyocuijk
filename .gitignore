@@ -5,7 +5,6 @@
 iplog.txt
 dont-upload/*
 *dont-upload.*
-php-gokyo/*
 
 images/informatie/recent/
 !images/informatie/recent/recent.png
