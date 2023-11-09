@@ -1,3 +1,13 @@
+<?php
+
+    $page['name'] = "contact";
+    $page['categorie'] = "contact";
+    $page['path_lvl'] = 2;
+    $page['sidebar'] = false;
+    require_once("../files/config.php");
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>

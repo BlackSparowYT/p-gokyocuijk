@@ -8,7 +8,8 @@
 
 ?>
 
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,10 +22,8 @@
     </head>
 
     <body id="lestijden">
-
-        <header>
-            <?php include("../files/components/navbar.php"); ?>
-        </header>
+        
+        <?php include($path.'files/components/header.php'); ?>
 
         <main class="lestijden">
             <div class="lestijden-hero">
