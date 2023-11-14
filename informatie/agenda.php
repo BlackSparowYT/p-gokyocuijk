@@ -150,6 +150,7 @@
                             <br>
                             <br>
                             <i>band- en slipexamens:</i> 17 & 19 juni
+                            <br>
                         <?php else: ?>
                             n.v.t.
                         <?php endif; ?>
@@ -237,6 +238,7 @@
                             t/m 
                             <br>
                             07 januari &nbsp;<script>document.write(new Date().getFullYear()+1)</script>
+                            <br>
                         <?php else: ?>
                             n.v.t.
                         <?php endif; ?>
