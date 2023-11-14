@@ -58,8 +58,6 @@
                         // Combine the adjusted year with the current month
                         $adjusted_months[$i] = $i.'/'.$adjusted_year;
                     }
-
-                    $date_input = "01/2024";
                 ?>
                 <div class="block">
                     <div class="jaartalblock">
