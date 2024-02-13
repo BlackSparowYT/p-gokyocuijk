@@ -5,15 +5,6 @@
         echo '<img class="'.$class.'" src="'.$path.'files/images/'.$src.'">';
     }
 
-    /* function icon($src, $class) {
-        global $path;
-        echo '<img class="'.$class.'" src="'.$path.'files/icons/'.$src.'">';
-    }
-
-    function ext_icon($src, $class) {
-        echo '<img class="'.$class.'" src="'.$src.'">';
-    } */
-
     function logo($src, $class = null) {
         global $path;
         echo '<img class="'.$class.'" src="'.$path.'files/logos/'.$src.'">';
@@ -70,7 +61,7 @@
         global $path;
         global $page;
 
-        $json = json_decode(file_get_contents($path."files/content.json"), true);
+        $json = json_decode(file_get_contents($path."files/lang/nl.json"), true);
 
         if ($id != null) {
             foreach ($json[$page['name']] as $key => $value) {
